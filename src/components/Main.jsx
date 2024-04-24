@@ -1,7 +1,13 @@
+import Hero from './Hero';
+import AboutMe from './AboutMe';
+import ProyectosDestacados from './ProyectosDestacados';
+
 function Main() {
   return (
-    <main>
-      <p>Main</p>
+    <main className="main">
+      <Hero />
+      <AboutMe />
+      <ProyectosDestacados />
     </main>
   );
 }
