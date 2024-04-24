@@ -1,0 +1,26 @@
+@import '../core/variables';
+
+.menu {
+    background-color: $darkWhite;
+    opacity: .9;
+    width: 200px;
+    z-index: 2;
+    position: absolute;
+    top: 51px; 
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    gap: 10px;
+
+    &__link {
+        font-family: $fontDisplayM;
+        font-size: fontSizeDisplayM;
+    }
+}
+
+.hidden {
+    display: none;
+}

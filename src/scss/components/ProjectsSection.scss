@@ -1,0 +1,40 @@
+@import '../core/variables';
+
+.projectsSection{
+    background-color: $blue;
+    height: 80vh;
+    border: solid 1px $gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__littleCardOne {
+        height: 234px;
+        width: 145px;
+        background-color: $gray;
+        border-radius: 20px;
+        transform: translateY(100px);
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__bigCard {
+        height: 340px;
+        width: 229px;
+        background-color: $darkPink;
+        border-radius: 20px;
+        z-index: 1;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__littleCardTwo {
+        height: 234px;
+        width: 145px;
+        background-color: $gray;
+        border-radius: 20px;
+        transform: translateY(-100px);
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -1,14 +1,27 @@
 import '../scss/components/FeaturedProjects.scss';
 import '../scss/core/variables.scss';
+import BannerProjects from './BannerProjects';
+import { useState, useEffect } from 'react';
 
 function FeaturedProjects() {
+  const [index, setIndex] = useState(0);
+  const images = ['/src/images/POSTER.png', '/src/images/MARCAPAGINAS.png'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="featuredProjects">
-      <div className="titleSection">
-        <h3 className="titleSection__text">PROYECTOS DESTACADOS</h3>
-      </div>
+      <BannerProjects items={['PROYECTOS DESTACADOS']} />
       <div className="imageSection">
-        <p>CARRUSEL</p>
+        <div
+          className="imageSection__carrusel"
+          style={{ backgroundImage: `url(${images[index]})` }}
+        ></div>
       </div>
     </section>
   );

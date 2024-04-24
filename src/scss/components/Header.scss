@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    align-items: baseline;
+    align-items: center;
     padding: 10px;
 
     &__logotipe {
-        width: 30px;
+        width: 50px;
 
         & img {
             width: 100%;
