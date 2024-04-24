@@ -1,11 +1,16 @@
 import '../scss/App.scss';
 // import PropTypes from "prop-types";
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
 function App() {
   return (
-    <>
-      <p>Hello, world!</p>
-    </>
+    <div className="bodyContainer">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
 }
 

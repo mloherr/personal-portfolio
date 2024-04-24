@@ -1,1 +1,10 @@
-@import 'core/reset'
+@import 'core/reset';
+@import 'core/variables';
+@import 'components/Header';
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $darkWhite;
+}
