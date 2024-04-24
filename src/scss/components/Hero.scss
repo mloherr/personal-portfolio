@@ -1,5 +1,90 @@
+@import '../core/variables';
 
 
 .hero {
     border: solid 1px $gray;
-}
+    background-color: $lightSalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+        width: 155px;
+        height: 155px;
+        border-radius: 50%;
+        background-color: grey;
+        margin: 10px 0 10px 0;
+        background-image: url('/src/images/photo.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        font-family: $fontH1M;
+        font-size: $fontSizeH1M;
+        text-align: center;
+        font-weight: 400;
+        padding: 0 20px;
+
+        &::after {
+            content: ""; 
+            display: block; 
+            width: 90%; 
+            height: 1px; 
+            background-color:$black; 
+            margin: 5px auto;
+        }
+    }
+
+    &__subtitle{
+        font-family: $fontH2M;
+        font-size: $fontSizeH2M;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &__text {
+        font-family: "Lexend", sans-serif;
+        font-size: 18px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+
+        &--buttonOff {
+            border: solid 1px $black;
+            border-radius: 50%;
+            background-color: $mint;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 1px  $black;
+            width: 30px;
+            height: 30px;
+    
+            & img {
+                width: 50%;
+            }
+        }
+        &--buttonOn {
+            border: solid 1px $black;
+            border-radius: 50%;
+            background-color: $mint;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            transform: translateY(2px) translateX(2px);
+    
+            & img {
+                width: 50%;
+            }
+
+    
+    }}};
