@@ -1,0 +1,27 @@
+@import '../core/variables';
+.footer {
+    background-color: $darkPink;
+    border: solid 1px $gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icons {
+        display: flex;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    &__text {
+        padding: 10px 0;
+        font-family: $fontH3M;
+        font-size: $fontSizeH3M;
+
+    }
+}
+
+.footerIcon {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,30 @@
+@import '../core/variables';
+
+.aboutMe {
+    background-color: $blue;
+    border: solid 1px $gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__decoration {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--circle {
+            display: block;
+            background-color: $black;
+            width: 103px;
+            height: 103px;
+            border-radius: 50%;
+            margin: 10px 0 10px 0;
+            background-image: url('/src/images/pointer.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30%;
+        }
+    }
+}
+

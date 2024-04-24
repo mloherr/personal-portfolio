@@ -1,0 +1,23 @@
+@import '../core/variables';
+
+.featuredProjects {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleSection {
+    background-color: $mint;
+    border: solid 1px $gray;
+
+    &__text {
+        font-family: "Lexend Exa", sans-serif;
+        font-size: 19px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.imageSection{
+    background-color: $lightSalmon;
+    border: solid 1px $gray;
+}

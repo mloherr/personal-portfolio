@@ -20,7 +20,7 @@ function Hero() {
     setIsOnVisibleInstagram(!isOnVisibleInstagram);
   };
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__image"></div>
       <h1 className="hero__title">
         Junior Full Stack Developer & UX/UI Graphic Designer
@@ -31,7 +31,8 @@ function Hero() {
         conocimientos sobre accesibilidad.
       </p>
       <div className="hero__buttons">
-        <button
+        <a
+          href="www.linkedin.com/in/maría-lópez-herráiz"
           className={
             isOnVisibleLinkedin
               ? 'hero__buttons--buttonOn'
@@ -40,8 +41,9 @@ function Hero() {
           onClick={handleClickLinkedin}
         >
           <img src={linkedin} alt="Linkedin logotipe" />
-        </button>
-        <button
+        </a>
+        <a
+          href="https://github.com/mloherr"
           className={
             isOnVisibleGithub
               ? 'hero__buttons--buttonOn'
@@ -50,8 +52,9 @@ function Hero() {
           onClick={handleClickGithub}
         >
           <img src={github} alt="Github logotipe" />
-        </button>
-        <button
+        </a>
+        <a
+          href="https://www.instagram.com/marialoherr?igsh=MTYyZnR5Ym16Zjk5Mg=="
           className={
             isOnVisibleInstagram
               ? 'hero__buttons--buttonOn'
@@ -60,9 +63,9 @@ function Hero() {
           onClick={handleClickInstagram}
         >
           <img src={instagram} alt="Instagram logotipe" />
-        </button>
+        </a>
       </div>
-    </div>
+    </section>
   );
 }
 
