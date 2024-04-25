@@ -7,34 +7,99 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
 
-    &__littleCardOne {
-        height: 234px;
-        width: 145px;
-        background-color: $gray;
+    &__cardDesign {
+        height: 145px;
+        width: 234px;
+        background-color: $darkSalmon;
         border-radius: 20px;
-        transform: translateY(100px);
-        background-position: center;
-        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 1px 4px $black;
+        
+        &--background {
+            height: 100%;
+            border-radius: 20px;
+
+            & img {
+                width: 88.2px;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+        }
+
+        &--text {
+            font-family: $fontCardtSubtitleM;
+            font-size: $fontSizeCardSubtitleM;
+            text-align: center;
+        }
+    }
+    &__cardIlustration {
+        height: 145px;
+        width: 234px;
+        background-color: $darkSalmon;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 1px 4px $black;
+        
+        &--background {
+            height: 100%;
+            border-radius: 20px;
+
+            & img {
+                width: 88.2px;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+        }
+
+        &--text {
+            font-family: $fontCardtSubtitleM;
+            font-size: $fontSizeCardSubtitleM;
+            text-align: center;
+        }
+    }
+    &__cardProgramming {
+        height: 145px;
+        width: 234px;
+        background-color: $darkSalmon;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 1px 4px $black;
+        
+        &--background {
+            height: 100%;
+            border-radius: 20px;
+
+            & img {
+                width: 88.2px;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+        }
+
+        &--text {
+            font-family: $fontCardtSubtitleM;
+            font-size: $fontSizeCardSubtitleM;
+            text-align: center;
+        }
     }
 
-    &__bigCard {
-        height: 340px;
-        width: 229px;
-        background-color: $darkPink;
-        border-radius: 20px;
-        z-index: 1;
-        background-position: center;
-        background-size: cover;
-    }
-
-    &__littleCardTwo {
-        height: 234px;
-        width: 145px;
-        background-color: $gray;
-        border-radius: 20px;
-        transform: translateY(-100px);
-        background-position: center;
-        background-size: cover;
-    }
+    
 }

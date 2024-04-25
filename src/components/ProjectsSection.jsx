@@ -1,39 +1,34 @@
 import '../scss/components/ProjectsSection.scss';
 import '../scss/core/variables.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import quijote from '../images/quijote.jpg';
+import fantasma from '../images/Fantasma.png';
+import web from '../images/web.png';
 
 function ProjectsSection() {
-  const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/quijote.jpg',
-    '/src/images/web.png',
-    '/src/images/Fantasma.png',
-  ];
-
-  const handleClick = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
   return (
     <section className="projectsSection">
-      <div
-        className="projectsSection__littleCardOne"
-        style={{
-          backgroundImage: `url(${
-            images[index === 0 ? images.length - 1 : index - 1]
-          })`,
-        }}
-      ></div>
-      <div
-        className="projectsSection__bigCard"
-        style={{ backgroundImage: `url(${images[index]})` }}
-        onScroll={handleClick}
-      ></div>
-      <div
-        className="projectsSection__littleCardTwo"
-        style={{
-          backgroundImage: `url(${images[(index + 1) % images.length]})`,
-        }}
-      ></div>
+      <Link to="/graphic-design-1">
+        <div className="projectsSection__cardDesign">
+          <figure className="projectsSection__cardDesign--background">
+            <img src={quijote} alt="Design for JCCM tourist center" />
+          </figure>
+          <p className="projectsSection__cardDesign--text">DISEÑO GRÁFICO</p>
+        </div>
+      </Link>
+      <div className="projectsSection__cardIlustration">
+        <figure className="projectsSection__cardIlustration--background">
+          <img src={fantasma} alt="Digital drawing for the spooky season" />
+        </figure>
+        <p className="projectsSection__cardIlustration--text">ILUSTRACIÓN</p>
+      </div>
+      <div className="projectsSection__cardProgramming">
+        <figure className="projectsSection__cardProgramming--background">
+          <img src={web} alt="Digital drawing for the spooky season" />
+        </figure>
+        <p className="projectsSection__cardProgramming--text">DESARROLLO WEB</p>
+      </div>
     </section>
   );
 }
