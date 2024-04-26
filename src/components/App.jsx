@@ -6,6 +6,7 @@ import Footer from './Footer';
 import ProjectsSection from './ProjectsSection';
 import GraphicDesignOne from './GraphicDesignOne';
 import { Routes, Route } from 'react-router-dom';
+import WebDevelopmentOne from './WebDevelopmentOne';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/projects" element={<ProjectsSection />} />
         <Route path="/graphic-design-1" element={<GraphicDesignOne />} />
+        <Route path="/web-development-1" element={<WebDevelopmentOne />} />
       </Routes>
       <Footer />
     </div>

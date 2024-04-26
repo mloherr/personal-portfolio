@@ -12,10 +12,14 @@ function ProjectsSection() {
           <p className="projectsSection__cardDesign--text">DISEÑO GRÁFICO</p>
         </div>
       </Link>
-      <div className="projectsSection__cardProgramming">
-        <div className="projectsSection__cardProgramming--background"></div>
-        <p className="projectsSection__cardProgramming--text">DESARROLLO WEB</p>
-      </div>
+      <Link to="/web-development-1">
+        <div className="projectsSection__cardProgramming">
+          <div className="projectsSection__cardProgramming--background"></div>
+          <p className="projectsSection__cardProgramming--text">
+            DESARROLLO WEB
+          </p>
+        </div>
+      </Link>
       <div className="projectsSection__cardIlustration">
         <div className="projectsSection__cardIlustration--background"></div>
         <p className="projectsSection__cardIlustration--text">ILUSTRACIÓN</p>
