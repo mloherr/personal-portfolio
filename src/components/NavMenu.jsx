@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function NavMenu() {
   return (
     <aside className="menu">
-      <Link>
+      <Link to="/about-me">
         <p className="menu__link">ABOUT ME</p>
       </Link>
       <Link to="/projects">

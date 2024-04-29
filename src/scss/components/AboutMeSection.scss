@@ -1,0 +1,57 @@
+@import '../core/variables';
+
+.aboutMeSection {
+    background-color: $blue;
+    height: 82vh;
+
+    &__cardsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        &--title {
+            background-color: $mint;
+            border: solid 1px $black;
+            border-radius: 20px;
+            width: 90%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &--little {
+            background-color: $darkSalmon;
+            border: solid 1px $black;
+            border-radius: 15px;
+            width: 83%;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+
+.titleText {
+    font-family:$fontCardtTitleM;
+    font-size: $fontSizeCardTitleM;
+};
+
+.subtitleText{
+    font-family:$fontCardtSubtitleM;
+    font-size: $fontSizeCardSubtitleM;
+}
+
+.cardBody {
+    font-family:$fontCardBodyM;
+    font-size: $fontSizeCardBodyM;
+};

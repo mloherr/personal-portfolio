@@ -22,7 +22,9 @@ function ProjectsSection() {
       </Link>
       <div className="projectsSection__cardIlustration">
         <div className="projectsSection__cardIlustration--background"></div>
-        <p className="projectsSection__cardIlustration--text">ILUSTRACIÓN</p>
+        <p className="projectsSection__cardIlustration--text">
+          EN CONSTRUCCIÓN
+        </p>
       </div>
     </section>
   );
