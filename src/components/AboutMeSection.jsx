@@ -33,7 +33,11 @@ function AboutMeSection() {
     <section className="aboutMeSection">
       <div className="aboutMeSection__cardsContainer">
         <div
-          className="aboutMeSection__cardsContainer--title"
+          className={
+            isTitleVisible
+              ? 'aboutMeSection__cardsContainer--titleOff'
+              : 'aboutMeSection__cardsContainer--titleOn'
+          }
           onClick={handleSetTitle}
         >
           {isTitleVisible ? (
@@ -46,7 +50,11 @@ function AboutMeSection() {
           )}
         </div>
         <div
-          className="aboutMeSection__cardsContainer--little"
+          className={
+            isDesignTitleVisible
+              ? 'aboutMeSection__cardsContainer--designOff'
+              : 'aboutMeSection__cardsContainer--designOn'
+          }
           onClick={handleSetDesignTitle}
         >
           {isDesignTitleVisible ? (
@@ -62,7 +70,11 @@ function AboutMeSection() {
           )}
         </div>
         <div
-          className="aboutMeSection__cardsContainer--little"
+          className={
+            isWebTitleVisible
+              ? 'aboutMeSection__cardsContainer--webOff'
+              : 'aboutMeSection__cardsContainer--webOn'
+          }
           onClick={handleSetWebTitle}
         >
           {' '}
@@ -79,7 +91,11 @@ function AboutMeSection() {
           )}
         </div>
         <div
-          className="aboutMeSection__cardsContainer--little"
+          className={
+            isDrafTitleVisible
+              ? 'aboutMeSection__cardsContainer--draftOff'
+              : 'aboutMeSection__cardsContainer--draftOn'
+          }
           onClick={handleSetDraftTitle}
         >
           {isDrafTitleVisible ? (
@@ -95,7 +111,11 @@ function AboutMeSection() {
           )}
         </div>
         <div
-          className="aboutMeSection__cardsContainer--little"
+          className={
+            isProfileTitleVisible
+              ? 'aboutMeSection__cardsContainer--profileOff'
+              : 'aboutMeSection__cardsContainer--profileOff'
+          }
           onClick={handleSetProfileTitle}
         >
           {isProfileTitleVisible ? (
