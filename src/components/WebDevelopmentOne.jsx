@@ -1,14 +1,14 @@
 import '../scss/components/WebDevelopmentOne.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
   const images = [
-    '/src/images/mockup-web-desktop.png',
-    '/src/images/web2.png',
-    '/src/images/web3.png',
+    '/src/images/MockupWebGroupOne.png',
+    '/src/images/MockupWebGroupTwo.png',
+    '/src/images/MockupWebGroupThree.png',
   ];
 
   const [isOnVisible, setIsOnVisible] = useState(false);

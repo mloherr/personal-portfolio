@@ -8,6 +8,7 @@ import GraphicDesignOne from './GraphicDesignOne';
 import { Routes, Route } from 'react-router-dom';
 import WebDevelopmentOne from './WebDevelopmentOne';
 import AboutMeSection from './AboutMeSection';
+import ContactSection from './ContactSection';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<ProjectsSection />} />
         <Route path="/graphic-design-1" element={<GraphicDesignOne />} />
         <Route path="/web-development-1" element={<WebDevelopmentOne />} />
+        <Route path="/contact" element={<ContactSection />} />
       </Routes>
       <Footer />
     </div>

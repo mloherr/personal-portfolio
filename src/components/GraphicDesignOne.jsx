@@ -3,7 +3,7 @@ import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.png';
 import photoshop from '../images/photoshop.png';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);

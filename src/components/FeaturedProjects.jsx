@@ -7,7 +7,7 @@ function FeaturedProjects() {
   const [index, setIndex] = useState(0);
   const images = [
     '/src/images/Mockup_Completo.jpg',
-    '/src/images/mockup-web-desktop.png',
+    '/src/images/MockupWebGroupOne.png',
     '/src/images/fantasmabig.png',
   ];
 

@@ -11,8 +11,8 @@ function NavMenu() {
       <Link to="/projects">
         <p className="menu__link">PROYECTOS</p>
       </Link>
-      <Link>
-        <p className="menu__link">SERVICIOS</p>
+      <Link to="/contact">
+        <p className="menu__link">CONTACT ME</p>
       </Link>
     </aside>
   );

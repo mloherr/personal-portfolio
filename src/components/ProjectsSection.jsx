@@ -1,6 +1,5 @@
 import '../scss/components/ProjectsSection.scss';
 import '../scss/core/variables.scss';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function ProjectsSection() {

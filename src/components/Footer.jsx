@@ -18,7 +18,6 @@ function Footer() {
           <img src={instagram} alt="Instagram icon" className="footerIcon" />
         </a>
       </div>
-      <p className="footer__text">CONTACT</p>
     </footer>
   );
 }
