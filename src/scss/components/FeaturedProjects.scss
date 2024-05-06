@@ -16,5 +16,14 @@
         background-position: center;
         background-size: cover;
         margin: 10px;
+
+        @media screen and (min-width: 726px)  {
+            height: 400px;
+        };
+
+        @media screen and (min-width: 726px)  {
+            height: 600px;
+        };
+
     }
 }
