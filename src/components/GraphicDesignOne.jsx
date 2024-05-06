@@ -1,8 +1,8 @@
 import '../scss/components/GraphicDesignOne.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
-import ilustrator from '../images/ilustrator.png';
-import photoshop from '../images/photoshop.png';
+import ilustrator from '../images/ilustrator.svg';
+import photoshop from '../images/photoshop.svg';
 import { useState } from 'react';
 
 function GraphicDesignOne() {
