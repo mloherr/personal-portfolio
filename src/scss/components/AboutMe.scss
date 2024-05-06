@@ -7,12 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0 10px 0;
 
     &__decoration {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+    
 
         &--circle {
             display: block;
@@ -25,6 +27,41 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 30%;
+
+
+            @media screen and (max-width: 726px)  {
+                transition: all 0.3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        @media screen and (max-width: 726px)  {
+            display: none;
+        }
+        text-align: center;
+        max-width: 500px;
+
+        &--subtitle{
+            font-family: $fontSubtitleD;
+            font-size: 25px;
+            font-weight: 500;
+            @media screen and (min-width: 1024px)  {
+                font-size: 35px;
+            }
+        }
+
+        &--text {
+            font-family: $fontBodyD;
+            font-size: 20px;
+            @media screen and (min-width: 1024px)  {
+                font-size: 25px;
+            }
         }
     }
 }
