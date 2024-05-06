@@ -28,13 +28,11 @@
             background-repeat: no-repeat;
             background-size: 30%;
 
-
-            @media screen and (max-width: 726px)  {
+            @media screen and (min-width: 726px)  {
                 transition: all 0.3s ease;
-                &:hover {
-                    transform: scale(1.1);
-                    width: 110px;
-                    height: 110px;
+                :hover {
+                    transform: scale(5);
+                   
                 }
             }
         }
