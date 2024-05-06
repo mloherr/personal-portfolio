@@ -32,54 +32,56 @@ function WebDevelopmentOne() {
     setIsOnVisible(!isOnVisible);
   };
   return (
-    <section className="webDevelopmentContainer">
-      <div
-        className="webDevelopmentContainer__mainPicture"
-        style={{ backgroundImage: `url(${images[index]})` }}
-      ></div>
-      <div className="webDevelopmentContainer__smallPicture">
-        <figure
-          className="webDevelopmentContainer__smallPicture--arrowLeft"
-          onClick={handleClickPrevious}
-        >
-          <img src={leftArrow} alt="Icon of a left arrow" />
-        </figure>
+    <section className="webDevelopmentsection">
+      <div className="carruselDevelopment">
+        <div
+          className="carruselDevelopment__mainPicture"
+          style={{ backgroundImage: `url(${images[index]})` }}
+        ></div>
+        <div className="carruselDevelopment__smallPicture">
+          <figure
+            className="carruselDevelopment__smallPicture--arrowLeft"
+            onClick={handleClickPrevious}
+          >
+            <img src={leftArrow} alt="Icon of a left arrow" />
+          </figure>
 
-        <div className="webDevelopmentContainer__smallPicture--one"></div>
-        <div className="webDevelopmentContainer__smallPicture--two"></div>
-        <div className="webDevelopmentContainer__smallPicture--three"></div>
-        <figure
-          className="webDevelopmentContainer__smallPicture--arrowRight"
-          onClick={handleClickNext}
-        >
-          <img src={righttArrow} alt="Icon of a right arrow" />
-        </figure>
+          <div className="carruselDevelopment__smallPicture--one"></div>
+          <div className="carruselDevelopment__smallPicture--two"></div>
+          <div className="carruselDevelopment__smallPicture--three"></div>
+          <figure
+            className="carruselDevelopment__smallPicture--arrowRight"
+            onClick={handleClickNext}
+          >
+            <img src={righttArrow} alt="Icon of a right arrow" />
+          </figure>
+        </div>
       </div>
-      <div className="webDevelopmentContainer__text">
-        <h1 className="webDevelopmentContainer__text--title">
-          WEB ESTÁTICA FLEXFEMMES
-        </h1>
-        <p className="webDevelopmentContainer__text--info">
-          Maquetación de página web estática para presentación de equipo de
-          trabajo de Front-end Developers.
+      <div className="infoSectionDevelopment">
+        <h1 className="infoSectionDevelopment__title">Choripoppins Projects</h1>
+        <p className="infoSectionDevelopment__description">
+          Proyecto grupal de una Web App para crear tarjetas de presentación de
+          proyectos personales donde se ha desarrollado tanto el front como el
+          back-end.
         </p>
+
+        <div className="infoSectionDevelopment__techonologies">
+          <img src={react} alt="" />
+          <img src={node} alt="" />
+          <img src={sass} alt="" />
+          <img src={mysql} alt="" />
+        </div>
+        <button
+          className={
+            isOnVisible
+              ? 'infoSectionDevelopment__buttonOn'
+              : 'infoSectionDevelopment__buttonOff'
+          }
+          onClick={handleOnClick}
+        >
+          SIGUIENTE PROYECTO
+        </button>
       </div>
-      <div className="webDevelopmentContainer__techonologies">
-        <img src={react} alt="" />
-        <img src={node} alt="" />
-        <img src={sass} alt="" />
-        <img src={mysql} alt="" />
-      </div>
-      <button
-        className={
-          isOnVisible
-            ? 'webDevelopmentContainer__buttonOn'
-            : 'webDevelopmentContainer__buttonOff'
-        }
-        onClick={handleOnClick}
-      >
-        SIGUIENTE PROYECTO
-      </button>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 @import '../core/variables';
 
-.webDevelopmentContainer {
+.webDevelopmentsection {
     background-color: $blue;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,21 @@
     height: 80vh;
     border-left: solid 1px $gray;
     border-right: solid 1px $gray;
+    
+    @media screen and (min-width: 1024px){
+        height: 82vh;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-evenly;
+    } 
+};
+
+.carruselDevelopment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 
     &__mainPicture {
         width: 285px;
@@ -18,12 +33,24 @@
         background-size: cover;
         background-position: center;
         margin-top: 15px;
+        @media screen and (min-width: 726px)  {
+            width: 350px;
+            height: 270px
+        }
+
+        @media screen and (min-width: 1024px){
+            width: 700px;
+            height: 420px
+        } 
+        
     }
 
     &__smallPicture {
         display: flex;
         gap: 15px;
         padding: 10px;
+        justify-content: center;
+        align-items: center;
 
         &--arrowLeft {
             width: 20px;
@@ -34,6 +61,15 @@
             & img {
                 width: 100%;
             }
+            @media screen and (min-width: 726px)  {
+                width: 32px;
+                height: 32px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 60px;
+                height: 60px;
+            } 
         }
 
         &--one {
@@ -42,6 +78,15 @@
             background-image: url('/src/images/MockupWebGroupOne.png');
             background-size: cover;
             background-position: center;
+            @media screen and (min-width: 726px)  {
+                width: 40px;
+                height: 40px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 80px;
+                height: 80px;
+            } 
         }
 
         &--two {
@@ -50,6 +95,15 @@
             background-image: url('/src/images/MockupWebGroupTwo.png');
             background-size: cover;
             background-position: center;
+            @media screen and (min-width: 726px)  {
+                width: 40px;
+                height: 40px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 80px;
+                height: 80px;
+            } 
         }
 
         &--three {
@@ -58,6 +112,15 @@
             background-image: url('/src/images/MockupWebGroupThree.png');
             background-size: cover;
             background-position: center;
+            @media screen and (min-width: 726px)  {
+                width: 40px;
+                height: 40px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 80px;
+                height: 80px;
+            } 
         }
         &--arrowRight {
             width: 20px;
@@ -68,23 +131,51 @@
             & img {
                 width: 100%;
             }
+            @media screen and (min-width: 726px)  {
+                width: 32px;
+                height: 32px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 60px;
+                height: 60px;
+            } 
         }
     }
+};
 
-    &__text {
-        text-align: center;
-
-        &--title {
-            font-family: $fontH1M;
-            font-size: $fontSizeH1M ;
+.infoSectionDevelopment {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    gap: 10px;
+    max-width: 35%;
+    
+    &__title {
+        font-family: $fontH1M;
+        font-size: $fontSizeH1M ;
+        @media screen and (min-width: 726px)  {
+            font-size: 25px;
         }
 
-        &--info {
-            font-family: $fontBodyM;
-            font-size: $fontSizeBodyM;
-            font-weight: 300;
-        }
+        @media screen and (min-width: 1024px){
+            font-size: 35px;
+        } 
     }
+
+    &__description {
+        font-family: $fontBodyM;
+        font-size: $fontSizeBodyM;
+        font-weight: 300;
+        @media screen and (min-width: 726px)  {
+            font-size: 20px;
+        }
+       
+    }
+
     &__techonologies {
         display: flex;
         gap: 10px;
@@ -92,9 +183,17 @@
         & img {
             width: 28px;
             height: 28px;
+            @media screen and (min-width: 726px)  {
+                width: 40px;
+                height: 40px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 50px;
+                height: 50px;
+            } 
         }
     }
-
     &__buttonOff {
         border: solid 1px $black;
         border-radius: 20px;
@@ -108,6 +207,10 @@
         font-size: $fontSizeButtonM;
         font-family: $fontButtonM;
         margin-bottom: 15px;
+        @media screen and (min-width: 1024px){
+            font-size: 20px;
+            width: 250px;
+        } 
     }
     &__buttonOn {
         border: solid 1px $black;
@@ -122,6 +225,10 @@
         font-size: $fontSizeButtonM;
         font-family: $fontButtonM;
         margin-bottom: 15px;
+        @media screen and (min-width: 1024px){
+            font-size: 20px;
+            width: 250px;
+        } 
     }
-}
+};
 

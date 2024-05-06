@@ -30,51 +30,52 @@ function GraphicDesignOne() {
     setIsOnVisible(!isOnVisible);
   };
   return (
-    <section className="graphicDesignContainer">
-      <div
-        className="graphicDesignContainer__mainPicture"
-        style={{ backgroundImage: `url(${images[index]})` }}
-      ></div>
-      <div className="graphicDesignContainer__smallPicture">
-        <figure
-          className="graphicDesignContainer__smallPicture--arrowLeft"
-          onClick={handleClickPrevious}
-        >
-          <img src={leftArrow} alt="Icon of a left arrow" />
-        </figure>
+    <section className="designSection">
+      <div className="carruselDesign">
+        <div
+          className="carruselDesign__mainPicture"
+          style={{ backgroundImage: `url(${images[index]})` }}
+        ></div>
+        <div className="carruselDesign__smallPicture">
+          <figure
+            className="carruselDesign__smallPicture--arrowLeft"
+            onClick={handleClickPrevious}
+          >
+            <img src={leftArrow} alt="Icon of a left arrow" />
+          </figure>
 
-        <div className="graphicDesignContainer__smallPicture--one"></div>
-        <div className="graphicDesignContainer__smallPicture--two"></div>
-        <div className="graphicDesignContainer__smallPicture--three"></div>
-        <figure
-          className="graphicDesignContainer__smallPicture--arrowRight"
-          onClick={handleClickNext}
-        >
-          <img src={righttArrow} alt="Icon of a right arrow" />
-        </figure>
+          <div className="carruselDesign__smallPicture--one"></div>
+          <div className="carruselDesign__smallPicture--two"></div>
+          <div className="carruselDesign__smallPicture--three"></div>
+          <figure
+            className="carruselDesign__smallPicture--arrowRight"
+            onClick={handleClickNext}
+          >
+            <img src={righttArrow} alt="Icon of a right arrow" />
+          </figure>
+        </div>
       </div>
-      <div className="graphicDesignContainer__text">
-        <h1 className="graphicDesignContainer__text--title">
-          TARJETAS TURISMO
-        </h1>
-        <p className="graphicDesignContainer__text--info">
+      <div className="infoSectionDesign">
+        <h1 className="infoSectionDesign__title">TARJETAS TURISMO</h1>
+        <p className="infoSectionDesign__description">
           Diseño de flyers con información turística sobre Castilla-La Mancha
+          para la asignatura curricular de Principios del Diseño.
         </p>
+        <div className="infoSectionDesign__techonologies">
+          <img src={ilustrator} alt="" />
+          <img src={photoshop} alt="" />
+        </div>
+        <button
+          className={
+            isOnVisible
+              ? 'infoSectionDesign__buttonOn'
+              : 'infoSectionDesign__buttonOff'
+          }
+          onClick={handleOnClick}
+        >
+          SIGUIENTE PROYECTO
+        </button>
       </div>
-      <div className="graphicDesignContainer__techonologies">
-        <img src={ilustrator} alt="" />
-        <img src={photoshop} alt="" />
-      </div>
-      <button
-        className={
-          isOnVisible
-            ? 'graphicDesignContainer__buttonOn'
-            : 'graphicDesignContainer__buttonOff'
-        }
-        onClick={handleOnClick}
-      >
-        SIGUIENTE PROYECTO
-      </button>
     </section>
   );
 }

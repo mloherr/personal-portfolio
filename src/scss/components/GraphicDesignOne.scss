@@ -1,6 +1,6 @@
 @import '../core/variables';
 
-.graphicDesignContainer {
+.designSection {
     background-color: $blue;
     display: flex;
     flex-direction: column;
@@ -11,117 +11,232 @@
     height: 80vh;
     border-left: solid 1px $gray;
     border-right: solid 1px $gray;
+    
+    @media screen and (min-width: 1024px){
+        height: 82vh;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-evenly;
+    } 
+};
 
-    &__mainPicture {
-        width: 285px;
-        height: 214px;
-        background-size: cover;
-        background-position: center;
-        margin-top: 15px;
-    }
-
-    &__smallPicture {
+    .carruselDesign {
         display: flex;
-        gap: 15px;
-        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
 
-        &--arrowLeft {
-            width: 20px;
+        &__mainPicture {
+            width: 285px;
+            height: 214px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 15px;
+
+            @media screen and (min-width: 726px)  {
+                width: 350px;
+                height: 270px
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 700px;
+                height: 420px
+            } 
+        }
+
+        &__smallPicture {
             display: flex;
-            align-items: center;
+            gap: 15px;
+            padding: 10px;
             justify-content: center;
+            align-items: center;
+    
+            &--arrowLeft {
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                & img {
+                    width: 100%;
+                }
 
-            & img {
-                width: 100%;
+                @media screen and (min-width: 726px)  {
+                    width: 32px;
+                    height: 32px
+                }
+
+                @media screen and (min-width: 1024px){
+                    width: 60px;
+                    height: 60px;
+                } 
+            }
+    
+            &--one {
+                width: 28px;
+                height: 28px;
+                background-image: url('/src/images/Mockup_Completo.jpg');
+                background-size: cover;
+                background-position: center;
+                @media screen and (min-width: 726px)  {
+                    width: 40px;
+                    height: 40px
+                }
+
+                @media screen and (min-width: 1024px){
+                    width: 80px;
+                    height: 80px;
+                } 
+            }
+    
+            &--two {
+                width: 28px;
+                height: 28px;
+                background-image: url('/src/images/Mockup_Quijote.jpg');
+                background-size: cover;
+                background-position: center;
+                @media screen and (min-width: 726px)  {
+                    width: 40px;
+                    height: 40px
+                }
+                @media screen and (min-width: 1024px){
+                    width: 80px;
+                    height: 80px;
+                } 
+            }
+    
+            &--three {
+                width: 28px;
+                height: 28px;
+                background-image: url('/src/images/Mockup_Folklore.jpg');
+                background-size: cover;
+                background-position: center;
+
+                @media screen and (min-width: 726px)  {
+                    width: 40px;
+                    height: 40px
+                }
+                @media screen and (min-width: 1024px){
+                    width: 80px;
+                    height: 80px;
+                } 
+            }
+
+            &--arrowRight {
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                & img {
+                    width: 100%;
+                }
+                @media screen and (min-width: 726px)  {
+                    width: 32px;
+                    height: 32px
+                }
+
+                @media screen and (min-width: 1024px){
+                    width: 60px;
+                    height: 60px;
+                } 
             }
         }
 
-        &--one {
-            width: 28px;
-            height: 28px;
-            background-image: url('/src/images/Mockup_Completo.jpg');
-            background-size: cover;
-            background-position: center;
-        }
+    };
 
-        &--two {
-            width: 28px;
-            height: 28px;
-            background-image: url('/src/images/Mockup_Quijote.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        &--three {
-            width: 28px;
-            height: 28px;
-            background-image: url('/src/images/Mockup_Folklore.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        &--arrowRight {
-            width: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            & img {
-                width: 100%;
-            }
-        }
-    }
-
-    &__text {
+    .infoSectionDesign {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px 0 15px;
+        gap: 10px;
+        max-width: 35%;
 
-        &--title {
+        &__title {
             font-family: $fontH1M;
-            font-size: $fontSizeH1M ;
+            font-size: $fontSizeH1M;
+
+            @media screen and (min-width: 726px)  {
+                font-size: 25px;
+            }
+
+            @media screen and (min-width: 1024px){
+                font-size: 35px;
+            } 
         }
 
-        &--info {
+        &__description {
             font-family: $fontBodyM;
             font-size: $fontSizeBodyM;
             font-weight: 300;
-        }
-    }
-    &__techonologies {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 15px;
-        & img {
-            width: 28px;
-            height: 28px;
-        }
-    }
 
-    &__buttonOff {
-        border: solid 1px $black;
-        border-radius: 20px;
-        background-color: $mint;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 2px 1px  $black;
-        width: 190px;
-        height: 37px;
-        font-size: $fontSizeButtonM;
-        font-family: $fontButtonM;
-        margin-bottom: 15px;
-    }
-    &__buttonOn {
-        border: solid 1px $black;
-        border-radius: 20px;
-        background-color: $mint;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 190px;
-        height: 37px;
-        transform: translateY(2px) translateX(2px);
-        font-size: $fontSizeButtonM;
-        font-family: $fontButtonM;
-        margin-bottom: 15px;
-    }
-}
+            @media screen and (min-width: 726px)  {
+                font-size: 20px;
+            }
+        }
 
+        &__techonologies {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            & img {
+                width: 28px;
+                height: 28px;
+
+                @media screen and (min-width: 726px)  {
+                    width: 40px;
+                    height: 40px
+                }
+
+                @media screen and (min-width: 1024px){
+                    width: 50px;
+                    height: 50px;
+                } 
+            }
+        }
+        &__buttonOff {
+            border: solid 1px $black;
+            border-radius: 20px;
+            background-color: $mint;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 1px  $black;
+            width: 190px;
+            height: 37px;
+            font-size: $fontSizeButtonM;
+            font-family: $fontButtonM;
+            margin-bottom: 15px;
+
+            @media screen and (min-width: 1024px){
+                font-size: 20px;
+                width: 250px;
+            } 
+        }
+        &__buttonOn {
+            border: solid 1px $black;
+            border-radius: 20px;
+            background-color: $mint;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 190px;
+            height: 37px;
+            transform: translateY(2px) translateX(2px);
+            font-size: $fontSizeButtonM;
+            font-family: $fontButtonM;
+            margin-bottom: 15px;
+
+            @media screen and (min-width: 1024px){
+                font-size: 20px;
+                width: 250px;
+            } 
+        }
+    };
+
+
+    
