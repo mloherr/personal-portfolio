@@ -10,6 +10,13 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
+    @media screen and (min-width: 726px) {
+        height: 90vh;
+    }
+    @media screen and (min-width: 1024px) {
+        height: 80vh;
+        flex-direction: row;
+    }
 
     &__cardDesign {
         height: 145px;
@@ -22,6 +29,20 @@
         margin-top: 10px;
         box-shadow: 4px 4px  $black;
         background-color: $darkSalmon;
+        @media screen and (min-width: 726px) {
+            height: 200px;
+            width: 300px;
+            &:hover {
+                box-shadow: none;
+                transform: translateX(2px) translateY(3px);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 400px;
+            width: 300px;
+            justify-content: space-between;
+        }
         
 
         &--background {
@@ -40,6 +61,13 @@
             font-size: $fontSizeCardSubtitleM;
             text-align: center;
             padding-top: 5px;
+            @media screen and (min-width: 726px) {
+                font-size: 15px
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
         }
     }
 
@@ -54,6 +82,21 @@
         margin-top: 10px;
         box-shadow: 4px 4px  $black;
         background-color: $darkSalmon;
+        @media screen and (min-width: 726px) {
+            height: 200px;
+            width: 300px;
+
+            &:hover {
+                box-shadow: none;
+                transform: translateX(2px) translateY(3px);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 400px;
+            width: 300px;
+            justify-content: space-between;
+        }
         
 
         &--background {
@@ -72,6 +115,13 @@
             font-size: $fontSizeCardSubtitleM;
             text-align: center;
             padding-top: 5px;
+            @media screen and (min-width: 726px) {
+                font-size: 15px
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
         }
     }
     &__cardIlustration {
@@ -85,6 +135,19 @@
         margin-top: 10px;
         box-shadow: 4px 4px  $black;
         background-color: $darkSalmon;
+        @media screen and (min-width: 726px) {
+            height: 200px;
+            width: 300px;
+            &:hover {
+                box-shadow: none;
+                transform: translateX(2px) translateY(3px);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 400px;
+            width: 300px;
+        }
         
 
         &--background {
@@ -103,6 +166,13 @@
             font-size: $fontSizeCardSubtitleM;
             text-align: center;
             padding-top: 5px;
+            @media screen and (min-width: 726px) {
+                font-size: 15px
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
         }
     }
     

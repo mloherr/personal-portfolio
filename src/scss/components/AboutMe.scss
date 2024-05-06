@@ -27,16 +27,21 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 30%;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
 
             @media screen and (min-width: 726px)  {
-                transition: all 0.3s ease;
-                :hover {
-                    transform: scale(5);
-                   
+                width: 120px;
+                height: 120px;
+            }
+
+           
                 }
             }
-        }
-    }
+        
+    
 
     &__text {
         @media screen and (max-width: 726px)  {
@@ -63,4 +68,3 @@
         }
     }
 }
-

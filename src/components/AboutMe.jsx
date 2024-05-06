@@ -5,9 +5,7 @@ function AboutMe() {
   return (
     <section className="aboutMe">
       <div className="aboutMe__decoration ">
-        <Link to="/about-me">
-          <div className="aboutMe__decoration--circle"></div>
-        </Link>
+        <Link to="/about-me" className="aboutMe__decoration--circle" />
       </div>
       <div className="aboutMe__text">
         <h2 className="aboutMe__text--subtitle">Hello, world!</h2>
