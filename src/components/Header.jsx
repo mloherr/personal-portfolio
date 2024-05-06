@@ -4,7 +4,7 @@ import logo from '../images/logo.png';
 import menu from '../images/menu.svg';
 import { useState, useEffect } from 'react';
 import NavMenu from './NavMenu';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, NavLink } from 'react-router-dom';
 
 function Header() {
   const { pathname } = useLocation();
@@ -31,10 +31,16 @@ function Header() {
         <img src={menu} alt="hamburguer menu image" />
       </button>
       {isOnVisible && <NavMenu handleOnClick={handleOnClick} />}
-      <nav className="hidden">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <nav className="header__navMenu">
+        <NavLink className="header__navMenu--link" to="/about-me">
+          ABOUT ME
+        </NavLink>
+        <NavLink className="header__navMenu--link" to="/projects">
+          PROYECTOS
+        </NavLink>
+        <NavLink className="header__navMenu--link" to="/contact">
+          CONTACTO
+        </NavLink>
       </nav>
     </header>
   );

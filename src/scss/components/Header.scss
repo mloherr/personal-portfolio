@@ -31,6 +31,10 @@
         & img {
             width: 50%;
         }
+
+        @media screen and (min-width: 726px)  {
+            display: none;
+        }
     }
     &__buttonOn {
         border: solid 1px $black;
@@ -46,6 +50,25 @@
         & img {
             width: 50%;
         }
+
+        @media screen and (min-width: 726px) {
+            display: none;
+        }
+        }
+
+        &__navMenu{
+            @media screen and (max-width: 726px) {
+                display: none;
+            }
+
+            display: flex;
+            gap: 15px;
+            font-family: $fontLinkD;
+            font-weight: 500;
+            font-size: 20px;
+            :hover {
+                font-weight: 400;
+            }
         }
 }
 

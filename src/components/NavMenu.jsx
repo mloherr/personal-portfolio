@@ -12,7 +12,7 @@ function NavMenu() {
         <p className="menu__link">PROYECTOS</p>
       </Link>
       <Link to="/contact">
-        <p className="menu__link">CONTACT ME</p>
+        <p className="menu__link">CONTACTO</p>
       </Link>
     </aside>
   );
