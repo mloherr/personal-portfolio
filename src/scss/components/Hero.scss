@@ -2,7 +2,8 @@
 
 
 .hero {
-    border: solid 1px $gray;
+    border-left: solid 1px $gray;
+    border-right: solid 1px $gray;
     background-color: $lightSalmon;
     display: flex;
     flex-direction: column;

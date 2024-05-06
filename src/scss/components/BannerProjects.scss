@@ -3,6 +3,7 @@
 .titleSection {
     background-color: $mint;
     border: solid 1px $gray;
+    border-bottom: none;
 
     &__text {
         font-family: "Lexend Exa", sans-serif;

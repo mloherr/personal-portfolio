@@ -3,6 +3,8 @@
 .aboutMeSection {
     background-color: $blue;
     height: 82vh;
+    border-left: solid 1px $gray;
+    border-right: solid 1px $gray;
 
     &__cardsContainer {
         display: flex;

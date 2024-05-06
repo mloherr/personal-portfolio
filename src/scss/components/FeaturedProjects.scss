@@ -8,6 +8,8 @@
 .imageSection{
     background-color: $lightSalmon;
     border: solid 1px $gray;
+    border-bottom: none;
+   
     
     &__carrusel {
         height: 291px;

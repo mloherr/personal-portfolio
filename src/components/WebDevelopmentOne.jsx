@@ -1,6 +1,10 @@
 import '../scss/components/WebDevelopmentOne.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
+import react from '../images/react.svg';
+import node from '../images/node.svg';
+import sass from '../images/sass.svg';
+import mysql from '../images/mysql.svg';
 import { useState } from 'react';
 
 function WebDevelopmentOne() {
@@ -61,8 +65,10 @@ function WebDevelopmentOne() {
         </p>
       </div>
       <div className="webDevelopmentContainer__techonologies">
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src={react} alt="" />
+        <img src={node} alt="" />
+        <img src={sass} alt="" />
+        <img src={mysql} alt="" />
       </div>
       <button
         className={

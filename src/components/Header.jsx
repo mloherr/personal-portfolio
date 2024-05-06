@@ -2,16 +2,20 @@ import '../scss/components/Header.scss';
 import '../scss/core/variables.scss';
 import logo from '../images/logo.png';
 import menu from '../images/menu.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavMenu from './NavMenu';
-import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 function Header() {
+  const { pathname } = useLocation();
   const [isOnVisible, setIsOnVisible] = useState(false);
 
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
   };
+  useEffect(() => {
+    setIsOnVisible(false);
+  }, [pathname]);
 
   return (
     <header className="header">
@@ -26,7 +30,7 @@ function Header() {
       >
         <img src={menu} alt="hamburguer menu image" />
       </button>
-      {isOnVisible && <NavMenu />}
+      {isOnVisible && <NavMenu handleOnClick={handleOnClick} />}
       <nav className="hidden">
         <a href=""></a>
         <a href=""></a>

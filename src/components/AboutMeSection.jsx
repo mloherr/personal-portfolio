@@ -114,7 +114,7 @@ function AboutMeSection() {
           className={
             isProfileTitleVisible
               ? 'aboutMeSection__cardsContainer--profileOff'
-              : 'aboutMeSection__cardsContainer--profileOff'
+              : 'aboutMeSection__cardsContainer--profileOn'
           }
           onClick={handleSetProfileTitle}
         >

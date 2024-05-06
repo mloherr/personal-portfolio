@@ -32,7 +32,7 @@ function Hero() {
       </p>
       <div className="hero__buttons">
         <a
-          href="www.linkedin.com/in/maría-lópez-herráiz"
+          href="https://www.linkedin.com/in/maria-lopez-herraiz"
           className={
             isOnVisibleLinkedin
               ? 'hero__buttons--buttonOn'
