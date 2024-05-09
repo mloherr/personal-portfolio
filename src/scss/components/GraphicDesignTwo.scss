@@ -56,6 +56,13 @@
                 width: 650px;
                 height: 420px;
             } 
+
+            &--zoom {
+                width: 50px;
+                height: 50px;
+                position: relative;
+                padding: 10px;
+            }
         }
 
         &__smallPicture {

@@ -5,8 +5,11 @@ import react from '../images/react.svg';
 import node from '../images/node.svg';
 import sass from '../images/sass.svg';
 import mysql from '../images/mysql.svg';
+import lupa from '../images/lupa.svg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
@@ -36,10 +39,19 @@ function WebDevelopmentOne() {
     <section className="webDevelopmentsection">
       <div className="webDevelopmentsection__itemsContainer">
         <div className="carruselDevelopment">
-          <div
-            className="carruselDevelopment__mainPicture"
-            style={{ backgroundImage: `url(${images[index]})` }}
-          ></div>
+          <Zoom>
+            <div
+              role="img"
+              className="carruselDevelopment__mainPicture"
+              style={{ backgroundImage: `url(${images[index]})` }}
+            >
+              <img
+                className="carruselDevelopment__mainPicture--zoom"
+                src={lupa}
+                alt=""
+              />
+            </div>
+          </Zoom>
           <div className="carruselDevelopment__smallPicture">
             <figure
               className="carruselDevelopment__smallPicture--arrowLeft"
@@ -78,6 +90,7 @@ function WebDevelopmentOne() {
 
           <a
             href="https://choripopins-project.onrender.com/"
+            target="_blank"
             className={
               isOnVisible
                 ? 'infoSectionDevelopment__buttonOn'

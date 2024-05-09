@@ -8,6 +8,7 @@ import GraphicDesignOne from './GraphicDesignOne';
 import GraphicDesingTwo from './GraphicDesignTwo';
 import { Routes, Route } from 'react-router-dom';
 import WebDevelopmentOne from './WebDevelopmentOne';
+import WebDevelopmentTwo from './WebDevelopmentTwo';
 import AboutMeSection from './AboutMeSection';
 import ContactSection from './ContactSection';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/graphic-design-1" element={<GraphicDesignOne />} />
         <Route path="/graphic-design-2" element={<GraphicDesingTwo />} />
         <Route path="/web-development-1" element={<WebDevelopmentOne />} />
+        <Route path="/web-development-2" element={<WebDevelopmentTwo />} />
         <Route path="/contact" element={<ContactSection />} />
       </Routes>
       <Footer />

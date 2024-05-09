@@ -3,8 +3,11 @@ import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
 import photoshop from '../images/photoshop.svg';
+import lupa from '../images/lupa.svg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);
@@ -34,10 +37,19 @@ function GraphicDesignOne() {
     <section className="designSection">
       <div className="designSection__itemsContainer">
         <div className="carruselDesign">
-          <div
-            className="carruselDesign__mainPicture"
-            style={{ backgroundImage: `url(${images[index]})` }}
-          ></div>
+          <Zoom>
+            <div
+              role="img"
+              className="carruselDesign__mainPicture"
+              style={{ backgroundImage: `url(${images[index]})` }}
+            >
+              <img
+                className="carruselDesign__mainPicture--zoom"
+                src={lupa}
+                alt=""
+              />
+            </div>
+          </Zoom>
           <div className="carruselDesign__smallPicture">
             <figure
               className="carruselDesign__smallPicture--arrowLeft"
