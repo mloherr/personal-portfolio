@@ -6,7 +6,7 @@ import photoshop from '../images/photoshop.svg';
 import lupa from '../images/lupa.svg';
 import firstMockup from '../images/Mockup_Completo.jpg';
 import secondMockup from '../images/Mockup_Quijote.jpg';
-import thirdMockup from '../images/Mockup_Folklore';
+import thirdMockup from '../images/Mockup_Folklore.jpg';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
