@@ -4,6 +4,9 @@ import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
 import photoshop from '../images/photoshop.svg';
 import lupa from '../images/lupa.svg';
+import firstMockup from '../images/Mockup_Completo.jpg';
+import secondMockup from '../images/Mockup_Quijote.jpg';
+import thirdMockup from '../images/Mockup_Folklore';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -11,11 +14,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/Mockup_Completo.jpg',
-    '/src/images/Mockup_Quijote.jpg',
-    '/src/images/Mockup_Folklore.jpg',
-  ];
+  const images = [firstMockup, secondMockup, thirdMockup];
   const [isOnVisible, setIsOnVisible] = useState(false);
 
   const handleClickNext = () => {
