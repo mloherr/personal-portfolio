@@ -33,6 +33,7 @@ function Hero() {
       <div className="hero__buttons">
         <a
           href="https://www.linkedin.com/in/maria-lopez-herraiz"
+          target="_blank"
           className={
             isOnVisibleLinkedin
               ? 'hero__buttons--buttonOn'
@@ -43,6 +44,7 @@ function Hero() {
           <img src={linkedin} alt="Linkedin logotipe" />
         </a>
         <a
+          target="_blank"
           href="https://github.com/mloherr"
           className={
             isOnVisibleGithub
@@ -54,6 +56,7 @@ function Hero() {
           <img src={github} alt="Github logotipe" />
         </a>
         <a
+          target="_blank"
           href="https://www.instagram.com/marialoherr?igsh=MTYyZnR5Ym16Zjk5Mg=="
           className={
             isOnVisibleInstagram

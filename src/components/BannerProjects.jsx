@@ -10,9 +10,9 @@ function BannerProjects({ items }) {
   return (
     <div className="relative flex w-full overflow-x-hidden  titleSection">
       <div className="animate-marquee whitespace-nowrap py-6 titleSection__text">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <span key={item} className={combinedClassNames}>
+            <span key={(item, index)} className={combinedClassNames}>
               {item}
             </span>
           );
@@ -20,9 +20,9 @@ function BannerProjects({ items }) {
       </div>
 
       <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-6 titleSection__text">
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <span key={item} className={combinedClassNames}>
+            <span key={index} className={combinedClassNames}>
               {item}
             </span>
           );

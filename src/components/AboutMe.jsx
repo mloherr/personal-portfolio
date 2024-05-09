@@ -1,6 +1,7 @@
 import '../scss/components/AboutMe.scss';
 import '../scss/core/variables.scss';
 import { Link } from 'react-router-dom';
+
 function AboutMe() {
   return (
     <section className="aboutMe">
