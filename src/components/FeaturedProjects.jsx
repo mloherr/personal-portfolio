@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react';
 function FeaturedProjects() {
   const [index, setIndex] = useState(0);
   const images = [
-    './Mockup_Completo.jpg',
-    './MockupWebGroupOne.png',
-    './fantasmabig.png',
+    '/src/images/Mockup_Completo.jpg',
+    '/src/images/MockupWebGroupOne.png',
+    '/src/images/fantasmabig.png',
   ];
 
   useEffect(() => {
