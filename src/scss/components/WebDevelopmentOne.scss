@@ -16,7 +16,7 @@
         height: 82vh;
         flex-direction: row;
         gap: 10px;
-        justify-content: space-evenly;
+        justify-content: center;
     } 
 };
 
@@ -152,7 +152,13 @@
     align-items: center;
     padding: 0 15px 0 15px;
     gap: 10px;
-    max-width: 35%;
+
+    @media screen and (min-width: 1024px){
+        max-width: 35%;
+        margin-right: 50px;
+        margin-left: 10px;
+        text-align: center;
+    } 
     
     &__title {
         font-family: $fontH1M;
