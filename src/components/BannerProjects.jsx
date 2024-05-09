@@ -1,5 +1,6 @@
 import '../scss/components/BannerProjects.scss';
 import '../scss/core/variables.scss';
+import PropTypes from 'prop-types';
 
 function BannerProjects({ items }) {
   const marginBanner = window.innerWidth >= 726 ? 'mx-20' : 'mx-10';
@@ -30,5 +31,9 @@ function BannerProjects({ items }) {
     </div>
   );
 }
+
+BannerProjects.propTypes = {
+  items: PropTypes.array,
+};
 
 export default BannerProjects;
