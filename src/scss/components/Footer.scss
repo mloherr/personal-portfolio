@@ -12,6 +12,9 @@
         display: flex;
         gap: 15px;
         padding-top: 10px;
+        @media screen and (min-width: 1024px)  {
+            gap: 50px;
+        }
     }
 
     &__text {
@@ -25,4 +28,14 @@
 .footerIcon {
     width: 20px;
     height: 20px;
+    @media screen and (min-width: 726px)  {
+        width: 30px;
+        height: 30px
+    }
+    @media screen and (min-width: 1024px)  {
+        width: 40px;
+        height: 40px
+    }
 }
+
+

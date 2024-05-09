@@ -82,6 +82,7 @@
         margin-top: 10px;
         box-shadow: 4px 4px  $black;
         background-color: $darkSalmon;
+       
         @media screen and (min-width: 726px) {
             height: 200px;
             width: 300px;
@@ -138,15 +139,12 @@
         @media screen and (min-width: 726px) {
             height: 200px;
             width: 300px;
-            &:hover {
-                box-shadow: none;
-                transform: translateX(2px) translateY(3px);
-            }
         }
 
         @media screen and (min-width: 1024px) {
             height: 400px;
             width: 300px;
+            justify-content: space-between;
         }
         
 
@@ -158,6 +156,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 25% 40%;
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
         }
       
 
