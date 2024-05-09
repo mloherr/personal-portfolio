@@ -1,8 +1,8 @@
 import '../scss/components/Footer.scss';
 import '../scss/core/variables.scss';
-import linkedin from '../images/linkedin.svg';
-import github from '../images/github.svg';
-import instagram from '../images/instagram.svg';
+import linkedin from './linkedin.svg';
+import github from './github.svg';
+import instagram from './instagram.svg';
 
 function Footer() {
   return (
