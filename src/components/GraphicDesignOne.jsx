@@ -4,6 +4,7 @@ import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
 import photoshop from '../images/photoshop.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);
@@ -31,50 +32,60 @@ function GraphicDesignOne() {
   };
   return (
     <section className="designSection">
-      <div className="carruselDesign">
-        <div
-          className="carruselDesign__mainPicture"
-          style={{ backgroundImage: `url(${images[index]})` }}
-        ></div>
-        <div className="carruselDesign__smallPicture">
-          <figure
-            className="carruselDesign__smallPicture--arrowLeft"
-            onClick={handleClickPrevious}
-          >
-            <img src={leftArrow} alt="Icon of a left arrow" />
-          </figure>
+      <div className="designSection__itemsContainer">
+        <div className="carruselDesign">
+          <div
+            className="carruselDesign__mainPicture"
+            style={{ backgroundImage: `url(${images[index]})` }}
+          ></div>
+          <div className="carruselDesign__smallPicture">
+            <figure
+              className="carruselDesign__smallPicture--arrowLeft"
+              onClick={handleClickPrevious}
+            >
+              <img src={leftArrow} alt="Icon of a left arrow" />
+            </figure>
 
-          <div className="carruselDesign__smallPicture--one"></div>
-          <div className="carruselDesign__smallPicture--two"></div>
-          <div className="carruselDesign__smallPicture--three"></div>
-          <figure
-            className="carruselDesign__smallPicture--arrowRight"
-            onClick={handleClickNext}
+            <div className="carruselDesign__smallPicture--one"></div>
+            <div className="carruselDesign__smallPicture--two"></div>
+            <div className="carruselDesign__smallPicture--three"></div>
+            <figure
+              className="carruselDesign__smallPicture--arrowRight"
+              onClick={handleClickNext}
+            >
+              <img src={righttArrow} alt="Icon of a right arrow" />
+            </figure>
+          </div>
+        </div>
+        <div className="infoSectionDesign">
+          <h1 className="infoSectionDesign__title">TARJETAS TURISMO</h1>
+          <p className="infoSectionDesign__description">
+            Diseño de flyers con información turística sobre Castilla-La Mancha
+            para la asignatura curricular de Principios del Diseño.
+          </p>
+          <div className="infoSectionDesign__techonologies">
+            <img src={ilustrator} alt="" />
+            <img src={photoshop} alt="" />
+          </div>
+          <button
+            className={
+              isOnVisible
+                ? 'infoSectionDesign__buttonOn'
+                : 'infoSectionDesign__buttonOff'
+            }
+            onClick={handleOnClick}
           >
-            <img src={righttArrow} alt="Icon of a right arrow" />
-          </figure>
+            Ver proyecto
+          </button>
         </div>
       </div>
-      <div className="infoSectionDesign">
-        <h1 className="infoSectionDesign__title">TARJETAS TURISMO</h1>
-        <p className="infoSectionDesign__description">
-          Diseño de flyers con información turística sobre Castilla-La Mancha
-          para la asignatura curricular de Principios del Diseño.
-        </p>
-        <div className="infoSectionDesign__techonologies">
-          <img src={ilustrator} alt="" />
-          <img src={photoshop} alt="" />
-        </div>
-        <button
-          className={
-            isOnVisible
-              ? 'infoSectionDesign__buttonOn'
-              : 'infoSectionDesign__buttonOff'
-          }
-          onClick={handleOnClick}
-        >
-          SIGUIENTE PROYECTO
-        </button>
+      <div className="otherProjects">
+        <Link to="/graphic-design-2">
+          <img className="otherProjects__left" src={leftArrow} alt="" />
+        </Link>
+        <Link to="/graphic-design-2">
+          <img className="otherProjects__right" src={righttArrow} alt="" />
+        </Link>
       </div>
     </section>
   );

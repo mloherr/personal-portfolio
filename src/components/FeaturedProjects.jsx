@@ -20,7 +20,9 @@ function FeaturedProjects() {
   }, []);
   return (
     <section className="featuredProjects">
-      <BannerProjects items={['PROYECTOS DESTACADOS']} />
+      <BannerProjects
+        items={['PROYECTOS DESTACADOS', 'PROYECTOS DESTACADOS']}
+      />
       <div className="imageSection">
         <div
           className="imageSection__carrusel"

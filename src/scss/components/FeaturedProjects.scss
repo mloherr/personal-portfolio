@@ -16,6 +16,12 @@
         background-position: center;
         background-size: cover;
         margin: 10px;
+        position: 'absolute';
+        top: 0;
+        left: 0;
+        width: 100%; // Ocupa todo el ancho del contenedor
+        height: 100%; // Ocupa toda la altura del contenedor
+        transition: background-image 0.5s ease;
 
         @media screen and (min-width: 726px)  {
             height: 400px;

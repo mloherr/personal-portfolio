@@ -14,32 +14,47 @@
     
     @media screen and (min-width: 1024px){
         height: 82vh;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
         justify-content: center;
     } 
+
+    &__itemsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 1024px){
+            height: 82vh;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            margin: 0 10px 0 10px;
+        } 
+    }
 };
 
 .carruselDevelopment {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
 
     &__mainPicture {
         width: 285px;
         height: 214px;
         background-size: cover;
         background-position: center;
-        margin-top: 15px;
+
         @media screen and (min-width: 726px)  {
             width: 350px;
             height: 270px
         }
 
         @media screen and (min-width: 1024px){
-            width: 700px;
+            width: 650px;
             height: 420px
         } 
         
@@ -67,8 +82,8 @@
             }
 
             @media screen and (min-width: 1024px){
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
             } 
         }
 
@@ -137,8 +152,8 @@
             }
 
             @media screen and (min-width: 1024px){
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
             } 
         }
     }
@@ -238,3 +253,27 @@
     }
 };
 
+    
+.otherProjects{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: 1024px){
+        margin-bottom: 10px;
+    } 
+
+    &__left {
+        width: 40px;
+        @media screen and (min-width: 1024px){
+            width: 60px;
+        } 
+    }
+
+    &__right {
+        width: 40px;
+        @media screen and (min-width: 1024px){
+            width: 60px;
+        } 
+    }
+};
