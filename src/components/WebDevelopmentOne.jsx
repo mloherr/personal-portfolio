@@ -6,6 +6,9 @@ import node from '../images/node.svg';
 import sass from '../images/sass.svg';
 import mysql from '../images/mysql.svg';
 import lupa from '../images/lupa.svg';
+import webGroup1 from '../images/MockupWebGroupOne.png';
+import webGroup2 from '../images/MockupWebGroupTwo.png';
+import webGroup3 from '../images/MockupWebGroupThree.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -13,11 +16,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/MockupWebGroupOne.png',
-    '/src/images/MockupWebGroupTwo.png',
-    '/src/images/MockupWebGroupThree.png',
-  ];
+  const images = [webGroup1, webGroup2, webGroup3];
 
   const [isOnVisible, setIsOnVisible] = useState(false);
   const handleClickNext = () => {

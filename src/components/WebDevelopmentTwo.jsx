@@ -6,6 +6,9 @@ import node from '../images/node.svg';
 import sass from '../images/sass.svg';
 import mysql from '../images/mysql.svg';
 import lupa from '../images/lupa.svg';
+import haikus1 from '../mockupPCHaikusOne.png';
+import haikus2 from '../mockupPCHaikusTwo.png';
+import haikus3 from '../mockupMobHaiku.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -13,11 +16,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/mockupPCHaikusOne.png',
-    '/src/images/mockupPCHaikusTwo.png',
-    '/src/images/mockupMobHaiku.png',
-  ];
+  const images = [haikus1, haikus2, haikus3];
 
   const [isOnVisible, setIsOnVisible] = useState(false);
   const handleClickNext = () => {

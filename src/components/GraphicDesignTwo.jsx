@@ -4,6 +4,9 @@ import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
 import photoshop from '../images/photoshop.svg';
 import lupa from '../images/lupa.svg';
+import ces1 from '../images/ces-1.png';
+import ces2 from '../images/ces-2.png';
+import ces3 from '../images/ces-3.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -11,11 +14,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/ces-1.png',
-    '/src/images/ces-2.png',
-    '/src/images/ces-3.png',
-  ];
+  const images = [ces1, ces2, ces3];
   const [isOnVisible, setIsOnVisible] = useState(false);
 
   const handleClickNext = () => {
