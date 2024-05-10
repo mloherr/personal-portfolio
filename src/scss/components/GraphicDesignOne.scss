@@ -8,7 +8,7 @@
     align-items: center;
     padding-top: 10px;
     gap: 15px;
-    max-height: 70vh;
+    max-height: 90vh;
     border-left: solid 1px $gray;
     border-right: solid 1px $gray;
     
@@ -24,6 +24,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: fit-content;
 
         @media screen and (min-width: 1024px){
             height: 82vh;
