@@ -73,11 +73,8 @@ function WebDevelopmentOne() {
         <div className="infoSectionDevelopment">
           <h1 className="infoSectionDevelopment__title">Haiku Generator</h1>
           <p className="infoSectionDevelopment__description">
-            Proyecto personal de una Webb App para generar haikus de manera
-            aleatoria, donde se ha desarrollado tanto el front como el back. Las
-            versiones para ordenador y tablet, cuentan con dos funcionalidades
-            extra para la reproducción de música y la animación de pétalos de
-            cerezo cayendo.
+            Proyecto personal de una Web App para generar haikus de forma
+            aleatoria donde se ha desarrollado tanto el front como el back-end.
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
