@@ -8,12 +8,12 @@
     align-items: center;
     padding-top: 10px;
     gap: 15px;
-    height: 80vh;
+    max-height: 70vh;
     border-left: solid 1px $gray;
     border-right: solid 1px $gray;
     
     @media screen and (min-width: 1024px){
-        height: 82vh;
+        max-height: 82vh;
         flex-direction: column;
         gap: 10px;
         justify-content: center;
@@ -43,8 +43,8 @@
         width: 70%;
 
         &__mainPicture {
-            width: 285px;
-            height: 214px;
+            width: 260px;
+            height: 200px;
             background-size: cover;
             background-position: center;
 
@@ -272,6 +272,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
     @media screen and (min-width: 1024px){
         margin-bottom: 10px;
     } 
