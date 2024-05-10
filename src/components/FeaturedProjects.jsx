@@ -1,15 +1,14 @@
 import '../scss/components/FeaturedProjects.scss';
 import '../scss/core/variables.scss';
 import BannerProjects from './BannerProjects';
+import projectJCCM from '../images/Mockup_Completo.jpg';
+import projectCardsWeb from '../images/MockupWebGroupOne.png';
+import projectHaikus from '../images/mockupPCHaikusTwo.png';
 import { useState, useEffect } from 'react';
 
 function FeaturedProjects() {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/src/images/Mockup_Completo.jpg',
-    '/src/images/MockupWebGroupOne.png',
-    '/src/images/fantasmabig.png',
-  ];
+  const images = [projectJCCM, projectCardsWeb, projectHaikus];
 
   useEffect(() => {
     const interval = setInterval(() => {
