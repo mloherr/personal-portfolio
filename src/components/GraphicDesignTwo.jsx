@@ -45,7 +45,7 @@ function GraphicDesignOne() {
               <img
                 className="carruselDesignTwo__mainPicture--zoom"
                 src={lupa}
-                alt=""
+                alt="Icon for lens"
               />
             </div>
           </Zoom>
@@ -75,8 +75,8 @@ function GraphicDesignOne() {
             resumen de los servicios ofertados y los principales colaboradores.
           </p>
           <div className="infoSectionDesign__techonologies">
-            <img src={ilustrator} alt="" />
-            <img src={photoshop} alt="" />
+            <img src={ilustrator} alt="Adobe Ilustrator logotipe" />
+            <img src={photoshop} alt="Adobe Photoshop logotipe" />
           </div>
           <button
             className={

@@ -47,7 +47,7 @@ function WebDevelopmentOne() {
               <img
                 className="carruselDevelopmentTwo__mainPicture--zoom"
                 src={lupa}
-                alt=""
+                alt="Icon for lens"
               />
             </div>
           </Zoom>
@@ -71,20 +71,20 @@ function WebDevelopmentOne() {
           </div>
         </div>
         <div className="infoSectionDevelopment">
-          <h1 className="infoSectionDevelopment__title">
-            Choripoppins Projects
-          </h1>
+          <h1 className="infoSectionDevelopment__title">Haiku Generator</h1>
           <p className="infoSectionDevelopment__description">
-            Proyecto grupal de una Web App para crear tarjetas de presentación
-            de proyectos personales donde se ha desarrollado tanto el front como
-            el back-end.
+            Proyecto personal de una Webb App para generar haikus de manera
+            aleatoria, donde se ha desarrollado tanto el front como el back. Las
+            versiones para ordenador y tablet, cuentan con dos funcionalidades
+            extra para la reproducción de música y la animación de pétalos de
+            cerezo cayendo.
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
-            <img src={react} alt="" />
-            <img src={node} alt="" />
-            <img src={sass} alt="" />
-            <img src={mysql} alt="" />
+            <img src={react} alt="React logotipe" />
+            <img src={node} alt="NodeJS logotipe" />
+            <img src={sass} alt="Sass logotipe" />
+            <img src={mysql} alt="Mysql logotipe" />
           </div>
 
           <a

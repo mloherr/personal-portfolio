@@ -47,7 +47,7 @@ function WebDevelopmentOne() {
               <img
                 className="carruselDevelopment__mainPicture--zoom"
                 src={lupa}
-                alt=""
+                alt="Icon for lens"
               />
             </div>
           </Zoom>
@@ -81,10 +81,10 @@ function WebDevelopmentOne() {
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
-            <img src={react} alt="" />
-            <img src={node} alt="" />
-            <img src={sass} alt="" />
-            <img src={mysql} alt="" />
+            <img src={react} alt="React logotipe" />
+            <img src={node} alt="NodeJS logotipe" />
+            <img src={sass} alt="Sass logotipe" />
+            <img src={mysql} alt="Mysql logotipe" />
           </div>
 
           <a
