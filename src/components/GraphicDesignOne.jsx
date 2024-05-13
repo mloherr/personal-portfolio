@@ -86,7 +86,7 @@ function GraphicDesignOne() {
             }
             onClick={handleOnClick}
           >
-            Ver proyecto
+            Ver documentación
           </button>
         </div>
       </div>
