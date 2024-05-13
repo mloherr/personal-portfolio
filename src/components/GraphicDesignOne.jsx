@@ -31,6 +31,13 @@ function GraphicDesignOne() {
 
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
+    const link = document.createElement('a');
+    link.href = '../files/FILES_JCCM.pdf';
+    link.download = 'FILES_JCCM.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setIsOnVisible(isOnVisible);
   };
   return (
     <section className="designSection">
