@@ -127,7 +127,7 @@ function AboutMeSection() {
               <p className="subtitleText">Bonus</p>
               <p className="cardBody">
                 Gracias a mi trayectoria profesional previa, la accesibilidad
-                está muy presente en todolo que hago.
+                está muy presente en todo lo que hago.
               </p>
             </>
           )}
