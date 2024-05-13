@@ -7,6 +7,7 @@ import lupa from '../images/lupa.svg';
 import firstMockup from '../images/Mockup_Completo.jpg';
 import secondMockup from '../images/Mockup_Quijote.jpg';
 import thirdMockup from '../images/Mockup_Folklore.jpg';
+import pdfFileJCCM from '../files/FILES_JCCM.pdf';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -32,7 +33,7 @@ function GraphicDesignOne() {
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
     const link = document.createElement('a');
-    link.href = '../files/FILES_JCCM.pdf';
+    link.href = pdfFileJCCM;
     link.download = 'FILES_JCCM.pdf';
     document.body.appendChild(link);
     link.click();
