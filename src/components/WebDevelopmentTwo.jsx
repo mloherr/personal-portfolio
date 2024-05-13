@@ -99,11 +99,11 @@ function WebDevelopmentOne() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/web-development-1">
-          <img className="otherProjects__left" src={leftArrow} alt="" />
+        <Link to="/web-development-1" className="otherProjects__left">
+          <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/web-development-1">
-          <img className="otherProjects__right" src={righttArrow} alt="" />
+        <Link to="/web-development-1" className="otherProjects__right">
+          <img src={righttArrow} alt="" />
         </Link>
       </div>
     </section>

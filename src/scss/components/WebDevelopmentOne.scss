@@ -264,7 +264,7 @@
 .otherProjects{
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 5px;
     
@@ -274,6 +274,13 @@
 
     &__left {
         width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+        }
         @media screen and (min-width: 1024px){
             width: 60px;
         } 
@@ -281,6 +288,11 @@
 
     &__right {
         width: 40px;
+        align-items: center;
+        justify-content: center;
+        & img {
+            width: 100%;
+        }
         @media screen and (min-width: 1024px){
             width: 60px;
         } 

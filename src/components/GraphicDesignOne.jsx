@@ -91,11 +91,11 @@ function GraphicDesignOne() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/graphic-design-2">
-          <img className="otherProjects__left" src={leftArrow} alt="" />
+        <Link to="/graphic-design-2" className="otherProjects__left">
+          <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/graphic-design-2">
-          <img className="otherProjects__right" src={righttArrow} alt="" />
+        <Link to="/graphic-design-2" className="otherProjects__right">
+          <img src={righttArrow} alt="" />
         </Link>
       </div>
     </section>
