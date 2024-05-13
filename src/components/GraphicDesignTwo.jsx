@@ -4,10 +4,10 @@ import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
 import photoshop from '../images/photoshop.svg';
 import lupa from '../images/lupa.svg';
-import ces1 from '../images/ces-1.png';
-import ces2 from '../images/ces-2.png';
-import ces3 from '../images/ces-3.png';
-import pdfFileWEB from '../files/FILES_CES.pdf';
+import ces1 from '../images/ces-5.webp';
+import ces2 from '../images/ces-6.webp';
+import ces3 from '../images/ces-4.webp';
+import pdfFileCES from '../files/FILES_CES.pdf';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -33,8 +33,8 @@ function GraphicDesignOne() {
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
     const link = document.createElement('a');
-    link.href = pdfFileWEB;
-    link.download = 'FILES_WEB.pdf';
+    link.href = pdfFileCES;
+    link.download = 'FILES_CES.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
