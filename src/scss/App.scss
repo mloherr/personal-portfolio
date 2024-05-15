@@ -31,4 +31,10 @@
     padding: 10px;
     background-color: $darkWhite;
     height: 100vh;
-}
+};
+
+@-moz-document url-prefix() {
+    body {
+        -moz-text-size-adjust: auto; /* o none */
+    }
+};
