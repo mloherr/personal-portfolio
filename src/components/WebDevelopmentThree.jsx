@@ -1,10 +1,9 @@
-import '../scss/components/WebDevelopmentTwo.scss';
+import '../scss/components/WebDevelopmentThree.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
-import react from '../images/react.svg';
-import node from '../images/node.svg';
-import sass from '../images/sass.svg';
-import mysql from '../images/mysql.svg';
+import angular from '../images/angular.svg';
+import tailwind from '../images/tailwind.svg';
+import css from '../images/css.svg';
 import lupa from '../images/lupa.svg';
 import commerce1 from '../images/fakeCommerce1.webp';
 import commerce2 from '../images/fakeCommerce2.webp';
@@ -71,17 +70,16 @@ function WebDevelopmentOne() {
           </div>
         </div>
         <div className="infoSectionDevelopment">
-          <h1 className="infoSectionDevelopment__title">Haiku Generator</h1>
+          <h1 className="infoSectionDevelopment__title">Fake Commerce</h1>
           <p className="infoSectionDevelopment__description">
-            Proyecto personal de una Web App para generar haikus de forma
-            aleatoria donde se ha desarrollado tanto el front como el back-end.
+            Proyecto realizado como parte de mi formación en Angular 17,
+            consistente en la elaboración de un e-commerce falso.
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
-            <img src={react} alt="React logotipe" />
-            <img src={node} alt="NodeJS logotipe" />
-            <img src={sass} alt="Sass logotipe" />
-            <img src={mysql} alt="Mysql logotipe" />
+            <img src={angular} alt="Angular logotipe" />
+            <img src={tailwind} alt="TailwindCSS logotipe" />
+            <img src={css} alt="CSS logotipe" />
           </div>
 
           <a
