@@ -79,18 +79,16 @@ function GraphicDesignOne() {
             <img src={ilustrator} alt="Adobe Ilustrator logotipe" />
             <img src={aftereffects} alt="Adobe AfterEffects logotipe" />
           </div>
-          <button
+          <a
+            href="https://www.instagram.com/reel/C7MFyKbrVhG/?igsh=MTFiOGNraHR2ZWM0YQ%3D%3D"
+            target="_blank"
             className={
               isOnVisible
                 ? 'infoSectionDesign__buttonOn'
                 : 'infoSectionDesign__buttonOff'
             }
             onClick={handleOnClick}
-          >
-            <a href="Ver proyecto" target="_blank">
-              Ver proyecto
-            </a>
-          </button>
+          ></a>
         </div>
       </div>
       <div className="otherProjects">

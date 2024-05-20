@@ -1,4 +1,4 @@
-import '../scss/components/GraphicDesignOne.scss';
+import '../scss/components/GraphicDesignTwo.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
