@@ -1,4 +1,4 @@
-import '../scss/components/WebDevelopmentOne.scss';
+import '../scss/components/WebDevelopmentTwo.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
 import react from '../images/react.svg';
@@ -6,9 +6,9 @@ import node from '../images/node.svg';
 import sass from '../images/sass.svg';
 import mysql from '../images/mysql.svg';
 import lupa from '../images/lupa.svg';
-import webGroup1 from '../images/MockupWebGroupOne.webp';
-import webGroup2 from '../images/MockupWebGroupTwo.webp';
-import webGroup3 from '../images/MockupWebGroupThree.webp';
+import commerce1 from '../images/fakeCommerce1.webp';
+import commerce2 from '../images/fakeCommerce2.webp';
+import commerce3 from '../images/fakeCommerce3.webp';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -16,7 +16,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
-  const images = [webGroup1, webGroup2, webGroup3];
+  const images = [commerce1, commerce3, commerce2];
 
   const [isOnVisible, setIsOnVisible] = useState(false);
   const handleClickNext = () => {
@@ -37,33 +37,33 @@ function WebDevelopmentOne() {
   return (
     <section className="webDevelopmentsection">
       <div className="webDevelopmentsection__itemsContainer">
-        <div className="carruselDevelopment">
+        <div className="carruselDevelopmentTwo">
           <Zoom>
             <div
               role="img"
-              className="carruselDevelopment__mainPicture"
+              className="carruselDevelopmentTwo__mainPicture"
               style={{ backgroundImage: `url(${images[index]})` }}
             >
               <img
-                className="carruselDevelopment__mainPicture--zoom"
+                className="carruselDevelopmentTwo__mainPicture--zoom"
                 src={lupa}
                 alt="Icon for lens"
               />
             </div>
           </Zoom>
-          <div className="carruselDevelopment__smallPicture">
+          <div className="carruselDevelopmentTwo__smallPicture">
             <figure
-              className="carruselDevelopment__smallPicture--arrowLeft"
+              className="carruselDevelopmentTwo__smallPicture--arrowLeft"
               onClick={handleClickPrevious}
             >
               <img src={leftArrow} alt="Icon of a left arrow" />
             </figure>
 
-            <div className="carruselDevelopment__smallPicture--one"></div>
-            <div className="carruselDevelopment__smallPicture--two"></div>
-            <div className="carruselDevelopment__smallPicture--three"></div>
+            <div className="carruselDevelopmentTwo__smallPicture--one"></div>
+            <div className="carruselDevelopmentTwo__smallPicture--two"></div>
+            <div className="carruselDevelopmentTwo__smallPicture--three"></div>
             <figure
-              className="carruselDevelopment__smallPicture--arrowRight"
+              className="carruselDevelopmentTwo__smallPicture--arrowRight"
               onClick={handleClickNext}
             >
               <img src={righttArrow} alt="Icon of a right arrow" />
@@ -71,13 +71,10 @@ function WebDevelopmentOne() {
           </div>
         </div>
         <div className="infoSectionDevelopment">
-          <h1 className="infoSectionDevelopment__title">
-            Choripoppins Projects
-          </h1>
+          <h1 className="infoSectionDevelopment__title">Haiku Generator</h1>
           <p className="infoSectionDevelopment__description">
-            Proyecto grupal de una Web App para crear tarjetas de presentación
-            de proyectos personales donde se ha desarrollado tanto el front como
-            el back-end.
+            Proyecto personal de una Web App para generar haikus de forma
+            aleatoria donde se ha desarrollado tanto el front como el back-end.
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
@@ -88,7 +85,7 @@ function WebDevelopmentOne() {
           </div>
 
           <a
-            href="https://choripopins-project.onrender.com/"
+            href="https://fake-store-lyart.vercel.app/"
             target="_blank"
             className={
               isOnVisible
@@ -102,7 +99,7 @@ function WebDevelopmentOne() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/web-development-3" className="otherProjects__left">
+        <Link to="/web-development-1" className="otherProjects__left">
           <img src={leftArrow} alt="" />
         </Link>
         <Link to="/web-development-2" className="otherProjects__right">
