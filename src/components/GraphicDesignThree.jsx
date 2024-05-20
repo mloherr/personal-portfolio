@@ -36,33 +36,33 @@ function GraphicDesigThree() {
   return (
     <section className="designSection">
       <div className="designSection__itemsContainer">
-        <div className="carruselDesignTwo">
+        <div className="carruselDesignThree">
           <Zoom>
             <div
               role="img"
-              className="carruselDesignTwo__mainPicture"
+              className="carruselDesignThree__mainPicture"
               style={{ backgroundImage: `url(${images[index]})` }}
             >
               <img
-                className="carruselDesignTwo__mainPicture--zoom"
+                className="carruselDesignThree__mainPicture--zoom"
                 src={lupa}
                 alt="Icon for lens"
               />
             </div>
           </Zoom>
-          <div className="carruselDesignTwo__smallPicture">
+          <div className="carruselDesignThree__smallPicture">
             <figure
-              className="carruselDesignTwo__smallPicture--arrowLeft"
+              className="carruselDesignThree__smallPicture--arrowLeft"
               onClick={handleClickPrevious}
             >
               <img src={leftArrow} alt="Icon of a left arrow" />
             </figure>
 
-            <div className="carruselDesignTwo__smallPicture--one"></div>
-            <div className="carruselDesignTwo__smallPicture--two"></div>
-            <div className="carruselDesignTwo__smallPicture--three"></div>
+            <div className="carruselDesignThree__smallPicture--one"></div>
+            <div className="carruselDesignThree__smallPicture--two"></div>
+            <div className="carruselDesignThree__smallPicture--three"></div>
             <figure
-              className="carruselDesignTwo__smallPicture--arrowRight"
+              className="carruselDesignThree__smallPicture--arrowRight"
               onClick={handleClickNext}
             >
               <img src={righttArrow} alt="Icon of a right arrow" />

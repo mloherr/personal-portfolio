@@ -36,33 +36,33 @@ function WebDevelopmentThree() {
   return (
     <section className="webDevelopmentsection">
       <div className="webDevelopmentsection__itemsContainer">
-        <div className="carruselDevelopmentTwo">
+        <div className="carruselDevelopmentThree">
           <Zoom>
             <div
               role="img"
-              className="carruselDevelopmentTwo__mainPicture"
+              className="carruselDevelopmentThree__mainPicture"
               style={{ backgroundImage: `url(${images[index]})` }}
             >
               <img
-                className="carruselDevelopmentTwo__mainPicture--zoom"
+                className="carruselDevelopmentThree__mainPicture--zoom"
                 src={lupa}
                 alt="Icon for lens"
               />
             </div>
           </Zoom>
-          <div className="carruselDevelopmentTwo__smallPicture">
+          <div className="carruselDevelopmentThree__smallPicture">
             <figure
-              className="carruselDevelopmentTwo__smallPicture--arrowLeft"
+              className="carruselDevelopmentThree__smallPicture--arrowLeft"
               onClick={handleClickPrevious}
             >
               <img src={leftArrow} alt="Icon of a left arrow" />
             </figure>
 
-            <div className="carruselDevelopmentTwo__smallPicture--one"></div>
-            <div className="carruselDevelopmentTwo__smallPicture--two"></div>
-            <div className="carruselDevelopmentTwo__smallPicture--three"></div>
+            <div className="carruselDevelopmentThree__smallPicture--one"></div>
+            <div className="carruselDevelopmentThree__smallPicture--two"></div>
+            <div className="carruselDevelopmentThree__smallPicture--three"></div>
             <figure
-              className="carruselDevelopmentTwo__smallPicture--arrowRight"
+              className="carruselDevelopmentThree__smallPicture--arrowRight"
               onClick={handleClickNext}
             >
               <img src={righttArrow} alt="Icon of a right arrow" />
@@ -97,10 +97,10 @@ function WebDevelopmentThree() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/web-development-1" className="otherProjects__left">
+        <Link to="/web-development-2" className="otherProjects__left">
           <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/web-development-2" className="otherProjects__right">
+        <Link to="/web-development-1" className="otherProjects__right">
           <img src={righttArrow} alt="" />
         </Link>
       </div>
