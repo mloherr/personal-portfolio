@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-function GraphicDesignOne() {
+function GraphicDesignTwo() {
   const [index, setIndex] = useState(0);
   const images = [ces1, ces2, ces3];
   const [isOnVisible, setIsOnVisible] = useState(false);
@@ -110,4 +110,4 @@ function GraphicDesignOne() {
   );
 }
 
-export default GraphicDesignOne;
+export default GraphicDesignTwo;

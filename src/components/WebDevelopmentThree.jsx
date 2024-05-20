@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-function WebDevelopmentOne() {
+function WebDevelopmentThree() {
   const [index, setIndex] = useState(0);
   const images = [commerce1, commerce3, commerce2];
 
@@ -108,4 +108,4 @@ function WebDevelopmentOne() {
   );
 }
 
-export default WebDevelopmentOne;
+export default WebDevelopmentThree;

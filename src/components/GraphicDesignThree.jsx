@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
-function GraphicDesignOne() {
+function GraphicDesigThree() {
   const [index, setIndex] = useState(0);
   const images = [grajo1, grajo2, grajo3];
   const [isOnVisible, setIsOnVisible] = useState(false);
@@ -105,4 +105,4 @@ function GraphicDesignOne() {
   );
 }
 
-export default GraphicDesignOne;
+export default GraphicDesigThree;
