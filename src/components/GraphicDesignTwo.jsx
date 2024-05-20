@@ -102,7 +102,7 @@ function GraphicDesignOne() {
         <Link to="/graphic-design-1" className="otherProjects__left">
           <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/graphic-design-1" className="otherProjects__right">
+        <Link to="/graphic-design-3" className="otherProjects__right">
           <img src={righttArrow} alt="" />
         </Link>
       </div>

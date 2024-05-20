@@ -1,13 +1,12 @@
-import '../scss/components/GraphicDesignOne.scss';
+import '../scss/components/GraphicDesignThree.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
 import ilustrator from '../images/ilustrator.svg';
-import photoshop from '../images/photoshop.svg';
+import aftereffects from '../images/aftereffects.svg';
 import lupa from '../images/lupa.svg';
-import firstMockup from '../images/Mockup_Completo.webp';
-import secondMockup from '../images/Mockup_Quijote.webp';
-import thirdMockup from '../images/Mockup_Folklore.webp';
-import pdfFileJCCM from '../files/FILES_JCCM.pdf';
+import grajo1 from '../images/grajo1.webp';
+import grajo2 from '../images/grajo2.webp';
+import grajo3 from '../images/grajo3.webp';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -15,7 +14,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function GraphicDesignOne() {
   const [index, setIndex] = useState(0);
-  const images = [firstMockup, secondMockup, thirdMockup];
+  const images = [grajo1, grajo2, grajo3];
   const [isOnVisible, setIsOnVisible] = useState(false);
 
   const handleClickNext = () => {
@@ -32,44 +31,38 @@ function GraphicDesignOne() {
 
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
-    const link = document.createElement('a');
-    link.href = pdfFileJCCM;
-    link.download = 'FILES_JCCM.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
     setIsOnVisible(isOnVisible);
   };
   return (
     <section className="designSection">
       <div className="designSection__itemsContainer">
-        <div className="carruselDesign">
+        <div className="carruselDesignTwo">
           <Zoom>
             <div
               role="img"
-              className="carruselDesign__mainPicture"
+              className="carruselDesignTwo__mainPicture"
               style={{ backgroundImage: `url(${images[index]})` }}
             >
               <img
-                className="carruselDesign__mainPicture--zoom"
+                className="carruselDesignTwo__mainPicture--zoom"
                 src={lupa}
                 alt="Icon for lens"
               />
             </div>
           </Zoom>
-          <div className="carruselDesign__smallPicture">
+          <div className="carruselDesignTwo__smallPicture">
             <figure
-              className="carruselDesign__smallPicture--arrowLeft"
+              className="carruselDesignTwo__smallPicture--arrowLeft"
               onClick={handleClickPrevious}
             >
               <img src={leftArrow} alt="Icon of a left arrow" />
             </figure>
 
-            <div className="carruselDesign__smallPicture--one"></div>
-            <div className="carruselDesign__smallPicture--two"></div>
-            <div className="carruselDesign__smallPicture--three"></div>
+            <div className="carruselDesignTwo__smallPicture--one"></div>
+            <div className="carruselDesignTwo__smallPicture--two"></div>
+            <div className="carruselDesignTwo__smallPicture--three"></div>
             <figure
-              className="carruselDesign__smallPicture--arrowRight"
+              className="carruselDesignTwo__smallPicture--arrowRight"
               onClick={handleClickNext}
             >
               <img src={righttArrow} alt="Icon of a right arrow" />
@@ -77,14 +70,14 @@ function GraphicDesignOne() {
           </div>
         </div>
         <div className="infoSectionDesign">
-          <h1 className="infoSectionDesign__title">TARJETAS TURISMO</h1>
+          <h1 className="infoSectionDesign__title">ANIMACIÓN CORPORATIVA</h1>
           <p className="infoSectionDesign__description">
-            Diseño de flyers con información turística sobre Castilla-La Mancha
-            para la asignatura curricular de Principios del Diseño.
+            Diseño y animación como parte de la promoción de la marca de un
+            estudio de diseño.
           </p>
           <div className="infoSectionDesign__techonologies">
-            <img src={ilustrator} alt="Adobe Ilustrator Logotipe" />
-            <img src={photoshop} alt="Adobe Photoshop logotipe" />
+            <img src={ilustrator} alt="Adobe Ilustrator logotipe" />
+            <img src={aftereffects} alt="Adobe AfterEffects logotipe" />
           </div>
           <button
             className={
@@ -94,15 +87,17 @@ function GraphicDesignOne() {
             }
             onClick={handleOnClick}
           >
-            Ver documentación
+            <a href="Ver proyecto" target="_blank">
+              Ver proyecto
+            </a>
           </button>
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/graphic-design-3" className="otherProjects__left">
+        <Link to="/graphic-design-2" className="otherProjects__left">
           <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/graphic-design-2" className="otherProjects__right">
+        <Link to="/graphic-design-1" className="otherProjects__right">
           <img src={righttArrow} alt="" />
         </Link>
       </div>
