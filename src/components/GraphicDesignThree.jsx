@@ -88,7 +88,9 @@ function GraphicDesignOne() {
                 : 'infoSectionDesign__buttonOff'
             }
             onClick={handleOnClick}
-          ></a>
+          >
+            Ve Proyecto
+          </a>
         </div>
       </div>
       <div className="otherProjects">
