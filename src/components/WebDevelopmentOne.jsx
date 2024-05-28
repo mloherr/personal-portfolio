@@ -88,7 +88,7 @@ function WebDevelopmentOne() {
           </div>
 
           <a
-            href="https://choripopins-project.onrender.com/"
+            href="https://project-promo-w-module-4-team-3.vercel.app/"
             target="_blank"
             className={
               isOnVisible
