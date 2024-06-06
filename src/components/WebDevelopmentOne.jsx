@@ -13,6 +13,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { useInView } from 'react-intersection-observer';
 
 function WebDevelopmentOne() {
   const [index, setIndex] = useState(0);
@@ -34,42 +35,50 @@ function WebDevelopmentOne() {
   const handleOnClick = () => {
     setIsOnVisible(!isOnVisible);
   };
-  return (
-    <section className="webDevelopmentsection">
-      <div className="webDevelopmentsection__itemsContainer">
-        <div className="carruselDevelopment">
-          <Zoom>
-            <div
-              role="img"
-              className="carruselDevelopment__mainPicture"
-              style={{ backgroundImage: `url(${images[index]})` }}
-            >
-              <img
-                className="carruselDevelopment__mainPicture--zoom"
-                src={lupa}
-                alt="Icon for lens"
-              />
-            </div>
-          </Zoom>
-          <div className="carruselDevelopment__smallPicture">
-            <figure
-              className="carruselDevelopment__smallPicture--arrowLeft"
-              onClick={handleClickPrevious}
-            >
-              <img src={leftArrow} alt="Icon of a left arrow" />
-            </figure>
 
-            <div className="carruselDevelopment__smallPicture--one"></div>
-            <div className="carruselDevelopment__smallPicture--two"></div>
-            <div className="carruselDevelopment__smallPicture--three"></div>
-            <figure
-              className="carruselDevelopment__smallPicture--arrowRight"
-              onClick={handleClickNext}
-            >
-              <img src={righttArrow} alt="Icon of a right arrow" />
-            </figure>
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <section className="webDevelopmentsection" ref={ref}>
+      <div className="webDevelopmentsection__itemsContainer">
+        {inView && (
+          <div className="carruselDevelopment">
+            <Zoom>
+              <div
+                role="img"
+                className="carruselDevelopment__mainPicture"
+                style={{ backgroundImage: `url(${images[index]})` }}
+              >
+                <img
+                  className="carruselDevelopment__mainPicture--zoom"
+                  src={lupa}
+                  alt="Icon for lens"
+                />
+              </div>
+            </Zoom>
+            <div className="carruselDevelopment__smallPicture">
+              <figure
+                className="carruselDevelopment__smallPicture--arrowLeft"
+                onClick={handleClickPrevious}
+              >
+                <img src={leftArrow} alt="Icon of a left arrow" />
+              </figure>
+
+              <div className="carruselDevelopment__smallPicture--one"></div>
+              <div className="carruselDevelopment__smallPicture--two"></div>
+              <div className="carruselDevelopment__smallPicture--three"></div>
+              <figure
+                className="carruselDevelopment__smallPicture--arrowRight"
+                onClick={handleClickNext}
+              >
+                <img src={righttArrow} alt="Icon of a right arrow" />
+              </figure>
+            </div>
           </div>
-        </div>
+        )}
         <div className="infoSectionDevelopment">
           <h1 className="infoSectionDevelopment__title">
             Choripoppins Projects
