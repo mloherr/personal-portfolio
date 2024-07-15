@@ -56,7 +56,8 @@
 
             @media screen and (min-width: 1024px){
                 width: 650px;
-                height: 420px
+                min-height: 399px;
+                max-height: 400px;
             } 
 
             &--zoom {
