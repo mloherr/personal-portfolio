@@ -36,7 +36,7 @@
     }
 };
 
-.carruselDevelopmentTwo {
+.carruselDevelopmentFour {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +98,7 @@
         &--one {
             width: 28px;
             height: 28px;
-            background-image: url('/src/images/mockupPCHaikusOne.webp');
+            background-image: url('/src/images/bookish1.webp');
             background-size: cover;
             background-position: center;
             @media screen and (min-width: 726px)  {
@@ -115,7 +115,7 @@
         &--two {
             width: 28px;
             height: 28px;
-            background-image: url('/src/images/mockupPCHaikusTwo.webp');
+            background-image: url('/src/images/bookish2.webp');
             background-size: cover;
             background-position: center;
             @media screen and (min-width: 726px)  {
@@ -132,7 +132,7 @@
         &--three {
             width: 28px;
             height: 28px;
-            background-image: url('/src/images/mockupMobHaiku.webp');
+            background-image: url('/src/images/bookish3.webp');
             background-size: cover;
             background-position: center;
             @media screen and (min-width: 726px)  {

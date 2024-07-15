@@ -1,13 +1,14 @@
 import '../scss/components/WebDevelopmentThree.scss';
 import leftArrow from '../images/left-arrow.svg';
 import righttArrow from '../images/right-arrow.svg';
-import angular from '../images/angular.svg';
-import tailwind from '../images/tailwind.svg';
-import css from '../images/css.svg';
+import react from '../images/react.svg';
+import sass from '../images/sass.svg';
+import node from '../images/node.svg';
+import sql from '../images/mysql.svg';
 import lupa from '../images/lupa.svg';
-import commerce1 from '../images/fakeCommerce1.webp';
-import commerce2 from '../images/fakeCommerce2.webp';
-import commerce3 from '../images/fakeCommerce3.webp';
+import books1 from '../images/bookish1.webp';
+import books2 from '../images/bookish2.webp';
+import books3 from '../images/bookish3.webp';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom';
@@ -15,7 +16,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function WebDevelopmentThree() {
   const [index, setIndex] = useState(0);
-  const images = [commerce1, commerce3, commerce2];
+  const images = [books1, books2, books3];
 
   const [isOnVisible, setIsOnVisible] = useState(false);
   const handleClickNext = () => {
@@ -36,33 +37,33 @@ function WebDevelopmentThree() {
   return (
     <section className="webDevelopmentsection">
       <div className="webDevelopmentsection__itemsContainer">
-        <div className="carruselDevelopmentThree">
+        <div className="carruselDevelopmentFour">
           <Zoom>
             <div
               role="img"
-              className="carruselDevelopmentThree__mainPicture"
+              className="carruselDevelopmentFour__mainPicture"
               style={{ backgroundImage: `url(${images[index]})` }}
             >
               <img
-                className="carruselDevelopmentThree__mainPicture--zoom"
+                className="carruselDevelopmentFour__mainPicture--zoom"
                 src={lupa}
                 alt="Icon for lens"
               />
             </div>
           </Zoom>
-          <div className="carruselDevelopmentThree__smallPicture">
+          <div className="carruselDevelopmentFour__smallPicture">
             <figure
-              className="carruselDevelopmentThree__smallPicture--arrowLeft"
+              className="carruselDevelopmentFour__smallPicture--arrowLeft"
               onClick={handleClickPrevious}
             >
               <img src={leftArrow} alt="Icon of a left arrow" />
             </figure>
 
-            <div className="carruselDevelopmentThree__smallPicture--one"></div>
-            <div className="carruselDevelopmentThree__smallPicture--two"></div>
-            <div className="carruselDevelopmentThree__smallPicture--three"></div>
+            <div className="carruselDevelopmentFour__smallPicture--one"></div>
+            <div className="carruselDevelopmentFour__smallPicture--two"></div>
+            <div className="carruselDevelopmentFour__smallPicture--three"></div>
             <figure
-              className="carruselDevelopmentThree__smallPicture--arrowRight"
+              className="carruselDevelopmentFour__smallPicture--arrowRight"
               onClick={handleClickNext}
             >
               <img src={righttArrow} alt="Icon of a right arrow" />
@@ -70,20 +71,21 @@ function WebDevelopmentThree() {
           </div>
         </div>
         <div className="infoSectionDevelopment">
-          <h1 className="infoSectionDevelopment__title">Fake Commerce</h1>
+          <h1 className="infoSectionDevelopment__title">Bookish Corner</h1>
           <p className="infoSectionDevelopment__description">
-            Proyecto realizado como parte de mi formación en Angular 17,
-            consistente en la elaboración de un e-commerce falso.
+            Proyecto realizaro para practicar la autenticación con JSON Web
+            Token, permitiendo añadir libros a favoritos.
           </p>
 
           <div className="infoSectionDevelopment__techonologies">
-            <img src={angular} alt="Angular logotipe" />
-            <img src={tailwind} alt="TailwindCSS logotipe" />
-            <img src={css} alt="CSS logotipe" />
+            <img src={react} alt="React logotipe" />
+            <img src={sass} alt="SASS logotipe" />
+            <img src={node} alt="NodeJs logotipe" />
+            <img src={sql} alt="MySQL logotipe" />
           </div>
 
           <a
-            href="https://fake-store-lyart.vercel.app/"
+            href="https://bookis-corner-web.vercel.app/"
             target="_blank"
             className={
               isOnVisible
@@ -97,10 +99,10 @@ function WebDevelopmentThree() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/web-development-2" className="otherProjects__left">
+        <Link to="/web-development-3" className="otherProjects__left">
           <img src={leftArrow} alt="" />
         </Link>
-        <Link to="/web-development-4" className="otherProjects__right">
+        <Link to="/web-development-1" className="otherProjects__right">
           <img src={righttArrow} alt="" />
         </Link>
       </div>
