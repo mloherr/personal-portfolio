@@ -99,11 +99,11 @@ function WebDevelopmentTwo() {
         </div>
       </div>
       <div className="otherProjects">
-        <Link to="/web-development-1" className="otherProjects__left">
-          <img src={leftArrow} alt="" />
+        <Link to="/web-development-3" className="otherProjects__left">
+          <img src={leftArrow} alt="Navegar hacia el siguiente proyecto" />
         </Link>
-        <Link to="/web-development-3" className="otherProjects__right">
-          <img src={righttArrow} alt="" />
+        <Link to="/web-development-2" className="otherProjects__right">
+          <img src={righttArrow} alt="Navegar hacia el anterior proyecto" />
         </Link>
       </div>
     </section>

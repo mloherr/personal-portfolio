@@ -7,7 +7,6 @@ import GraphicDesignOne from './GraphicDesignOne';
 import GraphicDesingTwo from './GraphicDesignTwo';
 import GraphicDesignThree from './GraphicDesignThree';
 import { Routes, Route } from 'react-router-dom';
-import WebDevelopmentOne from './WebDevelopmentOne';
 import WebDevelopmentTwo from './WebDevelopmentTwo';
 import WebDevelopmentThree from './WebDevelopmentThree';
 import WebDevelopmentFour from './WebDevelopmentFour';
@@ -25,10 +24,9 @@ function App() {
         <Route path="/graphic-design-1" element={<GraphicDesignOne />} />
         <Route path="/graphic-design-2" element={<GraphicDesingTwo />} />
         <Route path="/graphic-design-3" element={<GraphicDesignThree />} />
-        <Route path="/web-development-1" element={<WebDevelopmentOne />} />
-        <Route path="/web-development-2" element={<WebDevelopmentTwo />} />
-        <Route path="/web-development-3" element={<WebDevelopmentThree />} />
-        <Route path="/web-development-4" element={<WebDevelopmentFour />} />
+        <Route path="/web-development-1" element={<WebDevelopmentTwo />} />
+        <Route path="/web-development-2" element={<WebDevelopmentThree />} />
+        <Route path="/web-development-3" element={<WebDevelopmentFour />} />
         <Route path="/contact" element={<ContactSection />} />
       </Routes>
       <Footer />
