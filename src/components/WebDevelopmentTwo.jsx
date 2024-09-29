@@ -85,7 +85,7 @@ function WebDevelopmentTwo() {
           </div>
 
           <a
-            href="https://haiku-generator.onrender.com/"
+            href="https://haiku-generator-kappa.vercel.app/"
             target="_blank"
             className={
               isOnVisible
